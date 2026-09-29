@@ -53,7 +53,8 @@ Assess the credit profile as **Strong**, with **liquidity on watch**. Recheck wh
 
 ## Limits
 
-- One month of as-filed data.
+- One month of as-filed data, although sponsor fact sheets show weekly liquidity at 50.1–52.3% at every month-end
+  shown since October 2025.
 - Concentration is at legal-entity level, so group exposure may be higher.
 - Repo is shown gross of collateral.
-- Governance and redemption terms are not assessed; the prospectus review is the next step.
+- Fund terms are in the [prospectus review](prospectus-review.md). Governance is not assessed.

@@ -90,8 +90,9 @@
   private-label CMOs would be harder to liquidate at filed values in a stress than Treasuries, so the overcollateral
   margin is what absorbs the price move.
 
-**Manager and structure: not assessed here.** N-MFP does not show governance, credit process or redemption terms. A
-prospectus review (liquidity-fee terms and concentration limits) is the planned next step.
+**Fund terms: reviewed separately.** The [prospectus review](prospectus-review.md) covers the fund's terms: no sponsor
+support to rely on, liquidity fees instead of gates, a mandatory banking concentration and no stated limit on repo
+collateral. Governance and the adviser's credit process are not assessed.
 
 ## Profile sensitivities
 
@@ -106,7 +107,8 @@ prospectus review (liquidity-fee terms and concentration limits) is the planned 
 
 ## Data and limitations
 
-- One month of as-filed data.
+- One month of as-filed data. Sponsor fact sheets for October 2025 to July 2026 show the same liquidity pattern; see
+  the [prospectus review](prospectus-review.md).
 - Liquidity figures are each month's lowest daily readings, while stress uses month-end balances.
 - Concentration is at legal-entity level.
 - Repo is shown gross of collateral.

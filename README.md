@@ -28,6 +28,7 @@ credit-profile memo.
 - [x] Case study on JPMorgan Prime Money Market Fund: rationale and committee memo in
       [`docs/case-studies/jpmorgan-prime-2026-08/`](docs/case-studies/jpmorgan-prime-2026-08/)
 - [x] Case-study deck: [`deck.pdf`](docs/case-studies/jpmorgan-prime-2026-08/deck.pdf)
+- [x] Prospectus review with page references: [`prospectus-review.md`](docs/case-studies/jpmorgan-prime-2026-08/prospectus-review.md)
 
 ## Run
 
