@@ -52,10 +52,14 @@ def render_memo(m: dict, findings: list[Finding] | None = None, limits: Limits =
                  f"{rp['other_collateral_pct']:.1f}%); largest counterparty {rp['top_counterparty']} at "
                  f"{rp['top_counterparty_pct']:.1f}%, gross of collateral.")
     rc = m["rating_coverage"]
-    if rc["rated_share"] is not None:
+    if rc["reported"]:
         agencies = ", ".join(f"{k} {v:.0%}" for k, v in sorted(rc["by_agency"].items())) or "none"
-        L.append(f"- **Rating coverage:** {rc['rated_share']:.0%} of {rc['securities']} securities carry an "
-                 f"NRSRO rating ({agencies}). Ratings are shown per agency, not mapped across scales.")
+        L.append(f"- **Rating coverage (as filed):** {rc['rated_share']:.0%} of {rc['securities']} securities, "
+                 f"{rc['rated_pct_of_assets']:.1f}% of net assets, carry a security-level NRSRO rating "
+                 f"({agencies}). Ratings are shown per agency, not mapped across scales.")
+    else:
+        L.append("- **Rating coverage:** no NRSRO ratings reported in this filing. Absence in the data does not "
+                 "mean the holdings are unrated.")
     L.append("")
     L.append("## Portfolio mix (% of net assets)")
     for k, v in list(m["category_mix"].items())[:8]:

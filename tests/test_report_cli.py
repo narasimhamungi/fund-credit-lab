@@ -21,6 +21,12 @@ def test_memo_states_it_is_not_a_rating_and_lists_flags(nmfp_zip):
     assert "Fitch" not in memo.split("Not a credit rating")[0]  # no agency branding in the header
 
 
+def test_memo_states_when_no_ratings_are_reported(nmfp_zip):
+    # Regression: the rating line was silently omitted when a filing carried no NRSRO rows.
+    assert "no NRSRO ratings reported in this filing" in _memos(nmfp_zip)["S000000002"]
+    assert "Rating coverage (as filed):** 60% of 5 securities, 14.0% of net assets" in _memos(nmfp_zip)["S000000001"]
+
+
 def test_tax_exempt_memo_says_daily_minimum_does_not_apply(nmfp_zip):
     memo = _memos(nmfp_zip)["S000000003"]
     assert "does not apply to tax-exempt funds" in memo and "not applicable (tax-exempt)" in memo

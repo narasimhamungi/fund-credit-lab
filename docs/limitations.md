@@ -13,14 +13,16 @@
 - **Repo is shown gross of collateral.** Counterparty exposure is the repo position itself; the collateral table
   (`COLLATERALISSUERS`) is not read, so there is no look-through to collateral quality.
 - **Feeder funds are left out by default** (see decisions). Their master funds are analysed only if they file their own N-MFP.
-- **Rating coverage counts securities, not exposure.** A small unrated position counts the same as a large one.
+- **Ratings are as filed and often absent.** In the Sep 2026 data set only 192 filings carry any NRSRO rows, so a
+  missing rating in the data does not mean a holding is unrated. Coverage is shown by count and by % of net assets;
+  agency names are normalised (e.g. "Fitch Long Rating" and "Fitch Short Rating" both count as Fitch).
 - **One month at a time.** Each run analyses one report date; there is no trend across months yet.
 - **As-filed data.** SEC states it cannot guarantee accuracy of the data sets; values are as filed by registrants.
 - **Daily flow data** exists only where the filing carries `DLYSHAREHOLDERFLOWREPORT`; where it is absent, the
   historical-flow stress is skipped.
 - **Stress is a screen, not a forecast.** It ignores market-price impact, redemption behaviour and liquidity fees.
-- **Test status.** Unit tests run on synthetic fixtures written in the live SEC layout. See the README for the status
-  of live-data runs.
+- **Validation scope.** Net assets, WAM, WAL and liquidity were checked against sponsor disclosures for two funds
+  (`validation.md`). Concentration, repo and ratings have not been reconciled to a holdings file.
 
 ## Regulatory values and sources
 

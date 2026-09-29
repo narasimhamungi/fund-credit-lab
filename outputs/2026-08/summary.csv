@@ -1,0 +1,296 @@
+series_id,name,category,report_date,net_assets,wam,wal,dla_min_pct,wla_min_pct,dla_tested,top1_issuer,top1_pct,top5_pct,repo_pct,top_repo_counterparty,top_repo_counterparty_pct,rated_pct_of_assets,flags
+S000000048,Government Money Market Portfolio,Government,2026-08-31,482864952.4,41.0,92.0,73.0,75.0,True,,,,42.25,Tri-Party Bank of Montreal,5.18,,
+S000000112,BNY Dreyfus Treasury Obligations Cash Management,Government,2026-08-31,50147318264.12,43.0,97.0,92.69,97.17,True,,,,47.92,SMBC NIKKO SECURITIES AM,10.47,90.65,
+S000000113,BNY Dreyfus Treasury Securities Cash Management,Government,2026-08-31,74993674782.48,48.0,97.0,99.87,99.87,True,,,,0.0,,,105.83,
+S000000119,BNY Dreyfus Money Market Fund,Prime,2026-08-31,1927686687.18,36.0,62.0,51.76,54.56,True,BNP PARIBAS SA,3.37,14.15,47.21,MUFG SECURITIES (CANADA),18.16,98.24,thin WLA headroom (4.6 pp)
+S000000128,BNY Dreyfus Government Cash Management,Government,2026-08-31,154600711018.5,44.0,103.0,66.55,77.53,True,,,,37.07,ROYAL BANK OF CANADA,5.34,91.6,thin WAL headroom (17 days)
+S000000129,BNY Dreyfus Government Securities Cash Management,Government,2026-08-31,4837974979.9,45.0,92.0,70.4,82.45,True,,,,0.0,,,105.67,
+S000000173,Invesco Premier Portfolio,Prime,2026-08-31,10436683682.54,39.0,62.0,33.45,52.18,True,Bank of Nova Scotia,3.74,14.91,43.9,RBC Dominion Securities Inc.,6.71,0.0,thin WLA headroom (2.2 pp)
+S000000176,Invesco Premier U.S. Government Money Portfolio,Government,2026-08-31,24499919104.51,35.0,109.0,43.3,69.64,True,,,,47.49,BNP Paribas Securities Corp.,6.7,0.0,thin WAL headroom (11 days)
+S000000185,Invesco V.I. Government Money Market Fund,Government,2026-08-31,457340791.95,31.0,50.0,43.17,71.27,True,,,,42.94,Sumitomo Mitsui Banking Corp.,11.67,0.0,
+S000000220,Invesco Government & Agency Portfolio,Government,2026-08-31,125587857832.35,52.0,102.0,57.85,80.65,True,,,,39.59,"Fixed Income Clearing Corp. - Wells Fargo Bank, N.A.",5.36,0.0,thin WAM headroom (8 days); thin WAL headroom (18 days)
+S000000221,Invesco Treasury Obligations Portfolio,Government,2026-08-31,1677035277.83,53.0,99.0,99.9,99.9,True,,,,0.0,,,,thin WAM headroom (7 days)
+S000000224,Invesco Treasury Portfolio,Government,2026-08-31,58551996972.58,52.0,108.0,76.56,96.32,True,,,,45.94,BNP Paribas Securities Corp.,6.1,0.0,thin WAM headroom (8 days); thin WAL headroom (12 days)
+S000000253,Invesco Government Money Market Fund,Government,2026-08-31,6169502636.87,40.0,111.0,43.55,70.03,True,,,,38.38,BNP Paribas Securities Corp.,7.38,0.0,thin WAL headroom (9 days)
+S000000378,BNY Dreyfus Institutional Preferred Treasury Securities Money Market Fund,Government,2026-08-31,5168529342.21,42.0,86.0,99.9,99.9,True,,,,0.0,,,106.3,
+S000000623,Money Market Fund,Government,2026-08-31,1548004352.71,46.0,100.0,43.59,54.68,True,,,,29.92,"Tri-Party Repurchase Agreement with Barclays Capital, Inc.",13.24,,thin WLA headroom (4.7 pp)
+S000000762,MFS U.S. Government Cash Reserve Fund,Government,2026-08-31,451976288.67,33.0,33.0,66.68,88.96,True,,,,36.68,Bank of America NA,18.34,,
+S000001074,Gabelli U.S Treasury Money Market Fund,Government,2026-08-31,5651753265.62,53.0,59.0,99.36,99.36,True,,,,0.0,,,,thin WAM headroom (7 days)
+S000001111,Money Market Portfolio,Prime,2026-08-31,219244322.83,41.0,86.0,49.85,52.25,True,SVENSKA HANDELSBANKEN AB (NEW YORK BRANCH),2.98,12.93,39.92,JP MORGAN SECURITIES LLC,13.91,100.39,thin WLA headroom (2.2 pp)
+S000001112,Government Portfolio,Government,2026-08-31,1348659681.79,45.0,88.0,69.33,70.3,True,,,,49.49,MUFG SECURITIES AMERICAS INC,9.27,101.11,
+S000001169,MONEY MARKET FUND,Government,2026-08-31,1917693812.07,39.0,98.0,75.22,76.39,True,,,,31.84,BNP PARIBAS SA,5.17,100.93,
+S000001266,U.S. GOVERNMENT MONEY MARKET FUND,Government,2026-08-31,20230930736.63,39.0,105.0,58.67,75.49,True,,,,52.19,FIXED INCOME CLEARING CORP-JP MORGAN,26.7,,thin WAL headroom (15 days)
+S000001267,U.S. Government Select Money Market Fund,Government,2026-08-31,3989605607.55,39.0,113.0,61.96,76.04,True,,,,49.83,FIXED INCOME CLEARING CORP-JP MORGAN,25.06,,thin WAL headroom (7 days)
+S000001275,U.S. GOVERNMENT SELECT PORTFOLIO,Government,2026-08-31,30184134180.36,38.0,108.0,63.47,75.55,True,,,,48.88,FIXED INCOME CLEARING CORP-BARCLAYS BANK PLC,16.24,,thin WAL headroom (12 days)
+S000001286,U.S. GOVERNMENT PORTFOLIO,Government,2026-08-31,21418177615.43,39.0,102.0,62.57,73.26,True,,,,51.41,CITIGROUP GLOBAL MARKETS INC,15.87,,thin WAL headroom (18 days)
+S000001289,Liquid Assets Portfolio,Government,2026-08-31,3318925908.39,18.0,71.0,73.02,79.48,True,,,,70.09,FIXED INCOME CLEARING CORP-BANK OF NEW YORK MELLON,36.16,,
+S000001349,Thrivent Money Market Fund,Government,2026-08-31,3424775833.45,39.0,99.0,45.77,63.29,True,INVESCO GOVERNMENT TRUST,5.12,5.12,7.85,RBC DOMINION SECURITIES INC,7.85,,
+S000001440,Thrivent Money Market Portfolio,Government,2026-08-31,394515193.26,40.0,100.0,45.53,63.36,True,INVESCO GOVERNMENT TRUST,3.11,3.11,7.87,RBC DOMINION SECURITIES INC,7.87,,
+S000001474,TEMPCASH,Prime,2026-08-31,25542498848.96,39.0,81.0,34.69,50.8,True,Credit Agricole Corporate & Investment Bank SA,3.48,15.24,31.24,JP Morgan Securities LLC,5.52,97.64,thin WLA headroom (0.8 pp)
+S000001475,FEDFUND,Government,2026-08-31,197927162667.24,43.0,106.0,61.26,72.21,True,,,,41.48,Wells Fargo Securities LLC,4.8,97.34,thin WAL headroom (14 days)
+S000001476,T-FUND,Government,2026-08-31,125166698596.35,46.0,96.0,85.63,95.75,True,,,,53.26,Goldman Sachs & Co. LLC,7.67,94.92,
+S000001477,BlackRock Select Treasury Based Liquidity Fund,Government,2026-08-31,6328036046.8,11.0,11.0,99.6,100.0,True,,,,63.51,JP Morgan Securities LLC,15.8,94.44,
+S000001478,TREASURY TRUST FUND,Government,2026-08-31,184417794360.12,47.0,94.0,99.62,100.0,True,,,,0.0,,,103.02,
+S000001480,MUNICASH,Other Tax Exempt,2026-08-31,3638148415.88,6.0,6.0,18.16,100.0,False,Indiana Finance Authority,4.54,17.83,0.0,,,96.57,
+S000001503,BLACKROCK WEALTH LIQUID ENVIRONMENTALLY AWARE FUND,Prime,2026-08-31,5699549919.59,44.0,85.0,48.28,50.12,True,Svenska Handelsbanken AB,4.67,17.08,35.54,JP Morgan Securities LLC,18.76,97.88,thin WLA headroom (0.1 pp)
+S000001671,SFT Government Money Market Fund,Government,2026-08-31,226112531.03,21.0,21.0,69.55,99.96,True,State Street Institutional U.S. Government Money Market Fund,9.52,9.52,0.0,,,,
+S000001684,JNL Government Money Market Fund,Government,2026-08-31,3057916388.88,39.0,95.0,77.79,79.06,True,,,,35.69,Nova Scotia Repo,14.72,98.41,
+S000001747,JNL/DREYFUS GOVERNMENT MONEY MARKET FUND,Government,2026-08-31,2520783157.7,36.0,92.0,80.71,81.24,True,,,,43.0,Credit Agricole Repo,18.21,100.24,
+S000001806,RBC BlueBay U.S. Government Money Market Fund,Government,2026-08-31,16219500258.35,35.0,99.0,62.44,74.0,True,US BANK MMDA GLOBAL FUND SERVICES,0.26,0.26,53.47,WELLS FARGO SECURITIES LLC REPO 3.67 09/01/2026,4.93,100.47,
+S000001845,American Beacon U.S. Government Money Market Select Fund,Government,2026-08-31,688373907.36,17.0,77.0,34.01,61.52,True,Fidelity Investments Money Market Government Portfolio (Institutional),0.07,0.07,33.99,Credit Agricole CIB,15.11,,
+S000001923,BNYM VIF:Government Money Market Portfolio,Government,2026-08-31,393504788.78,28.0,76.0,80.87,81.82,True,,,,53.62,ABN AMRO BANK NV,24.14,100.48,
+S000002007,AST Government Money Market Portfolio,Government,2026-08-31,709099642.88,29.0,53.0,40.28,70.81,True,,,,26.1,CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK (NEW YORK BRANCH),8.18,100.14,
+S000002140,"T. Rowe Price Government Money Fund, Inc.",Government,2026-08-31,13572916091.58,48.0,94.0,78.78,84.92,True,,,,60.8,FIXED INCOME CLEARING BNYM MORTGAGE REPO 3.6700 20260901,28.95,100.07,
+S000002150,T. Rowe Price Maryland Municipal Money Fund,Single State,2026-08-31,112945338.22,33.0,33.0,7.81,72.84,False,TENDER OPTION BOND TRUST RECEIPTS/CERTIFICATES,25.8,73.06,0.0,,,103.93,issuer concentration: TENDER OPTION BOND TRUST RECEIPTS/CERTIFICATES 25.8%
+S000002151,T. Rowe Price Cash Reserves Fund,Prime,2026-08-31,4990912346.59,44.0,84.0,26.74,52.14,True,FALCON ASSET FUNDING LLC,2.02,9.16,21.59,FIXED INCOME CLEARING BNYM MORTGAGE REPO 3.6700 20260901,12.52,96.55,thin DLA headroom (1.7 pp); thin WLA headroom (2.1 pp)
+S000002153,T. Rowe Price Government Reserve Fund,Government,2026-08-31,14189335302.0,31.0,67.0,87.63,89.48,True,,,,68.17,FIXED INCOME CLEARING BNYM TREASURY REPO 3.6600 20260901,9.62,98.85,
+S000002154,T. Rowe Price Treasury Reserve Fund,Government,2026-08-31,3604219427.36,29.0,65.0,98.44,99.92,True,,,,62.86,FIXED INCOME CLEARING BNYM TREASURY REPO 3.6600 20260901,18.15,101.62,
+S000002161,"T. Rowe Price Municipal Money Fund, Inc.",Other Tax Exempt,2026-08-31,648631449.26,41.0,41.0,0.61,62.28,False,TENDER OPTION BOND TRUST RECEIPTS/CERTIFICATES,29.11,40.57,0.0,,,99.1,issuer concentration: TENDER OPTION BOND TRUST RECEIPTS/CERTIFICATES 29.1%
+S000002169,T. Rowe Price U.S. Treasury Money Fund,Government,2026-08-31,12811706408.74,48.0,96.0,96.74,98.95,True,,,,57.49,FIXED INCOME CLEARING BNYM TREASURY REPO 3.6600 20260901,21.32,99.71,
+S000002195,PSF PGIM Government Money Market Portfolio,Government,2026-08-31,1371698634.2,28.0,50.0,40.91,70.64,True,,,,29.92,CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK (NEW YORK BRANCH),7.65,99.91,
+S000002233,Vanguard Treasury Money Market Fund,Government,2026-08-31,113352851532.25,29.0,53.0,99.47,99.95,True,,,,0.0,,,,
+S000002435,MFS U.S. Government Money Market Fund,Government,2026-08-31,307423863.65,33.0,33.0,67.29,88.83,True,,,,37.82,Bank of America NA,18.91,,
+S000002565,Vanguard California Municipal Money Market Fund,Single State,2026-08-31,4085945832.23,14.0,14.0,,84.26,False,University of California,13.76,39.05,0.0,,,,issuer concentration: University of California 13.8%
+S000002575,Vanguard Market Liquidity Fund,Government,2026-08-31,115309875985.89,22.0,43.0,55.1,79.08,True,,,,36.49,BNP Paribas Fortis SA,4.47,,
+S000002643,MFS U.S. Government Money Market Portfolio,Government,2026-08-31,246677767.64,33.0,33.0,67.07,88.4,True,,,,37.34,Bank of America NA,18.67,,
+S000002684,UBS Liquid Assets Government Fund,Government,2026-08-31,1218417835.41,32.0,45.0,86.75,91.62,True,,,,49.7,Fixed Income Clearing Corp. - State Street Bank and Trust Co.,37.39,1.64,
+S000002685,Thrivent Cash Management Trust,Government,2026-08-31,370065913.46,16.0,71.0,31.32,67.01,True,STATE ST INST US GOV MM FUND,28.29,28.29,0.0,,,,issuer concentration: STATE ST INST US GOV MM FUND 28.3%
+S000002695,UBS Government Money Market Investments Fund,Government,2026-08-31,2621097516.01,34.0,98.0,63.06,74.1,True,,,,28.08,Fixed Income Clearing Corp. - State Street Bank and Trust Co.,23.88,1.75,
+S000002772,BNY Dreyfus Institutional Preferred Government Plus Money Market Fund,Government,2026-08-31,736671423.22,1.0,1.0,99.96,99.96,True,,,,99.9,ABN AMRO BANK NV,24.43,99.9,
+S000002805,LVIP Government Money Market Fund,Government,2026-08-31,1888720355.1,36.0,93.0,75.06,75.84,True,State Street Institutional U.S. Government Money Market Fund,0.04,0.04,47.44,BNP Paribas,6.46,100.82,
+S000002884,BLACKROCK GOVERNMENT MONEY MARKET V.I. FUND,Government,2026-08-31,208385933.84,46.0,99.0,73.95,75.86,True,,,,35.04,Mizuho Securities USA LLC,7.44,100.2,
+S000002898,Vanguard Municipal Money Market Fund,Other Tax Exempt,2026-08-31,18182616971.74,17.0,18.0,,90.35,False,State of Texas,3.48,16.14,0.0,,,,
+S000002906,Vanguard New York Municipal Money Market Fund,Single State,2026-08-31,3564809458.16,15.0,16.0,,89.14,False,"City of New York, NY",10.57,42.14,0.0,,,,"issuer concentration: City of New York, NY 10.6%"
+S000002965,JPMorgan 100% U.S. Treasury Securities Money Market Fund,Government,2026-08-31,347941648506.16,42.0,102.0,99.92,99.92,True,,,,0.0,,,105.34,thin WAL headroom (18 days)
+S000002966,JPMorgan California Municipal Money Market Fund,Single State,2026-08-31,195392285.67,16.0,16.0,25.99,81.33,False,TENDER OPTION BOND TRUST RECEI,32.6,52.43,0.0,,,99.31,issuer concentration: TENDER OPTION BOND TRUST RECEI 32.6%
+S000002967,JPMorgan Federal Money Market Fund,Government,2026-08-31,7854490992.24,30.0,87.0,66.77,70.63,True,,,,0.0,,,103.79,
+S000002968,JPMorgan New York Municipal Money Market Fund,Single State,2026-08-31,1635824892.65,34.0,34.0,16.62,77.03,False,TENDER OPTION BOND TRUST RECEI,24.61,53.9,0.0,,,99.78,issuer concentration: TENDER OPTION BOND TRUST RECEI 24.6%
+S000002969,JPMorgan Prime Money Market Fund,Prime,2026-08-31,92079337440.93,42.0,67.0,26.23,50.3,True,BNP PARIBAS SA,3.44,13.69,26.08,SOCIETE GENERALE,2.92,98.1,thin DLA headroom (1.2 pp); thin WLA headroom (0.3 pp)
+S000002970,JPMorgan Tax Free Money Market Fund,Other Tax Exempt,2026-08-31,10057936453.96,36.0,36.0,19.87,68.09,False,TENDER OPTION BOND TRUST RECEI,15.55,36.4,0.0,,,100.39,issuer concentration: TENDER OPTION BOND TRUST RECEI 15.5%
+S000003444,Davis Government Money Market Fund,Government,2026-08-31,107175947.01,38.0,64.0,63.85,63.85,True,,,,64.3,StoneX Financial Inc. Joint Repurchase Agreement,30.87,,
+S000003657,U.S. Government Money Market Fund,Government,2026-08-31,238489889.69,18.0,28.0,50.65,65.51,True,,,,34.29,BANK OF AMERICA,17.75,,
+S000003710,U.S. Government Money Market Fund,Government,2026-08-31,40129502.77,18.0,29.0,47.21,62.79,True,,,,37.11,BANK OF AMERICA,19.21,,
+S000003835,S000003835,Government,2026-08-31,192898164.73,23.0,43.0,38.6,53.72,True,,,,13.24,"HSBC Securities USA, Inc.",12.96,,thin WLA headroom (3.7 pp)
+S000003870,BLACKROCK GOVERNMENT MONEY MARKET PORTFOLIO,Government,2026-08-31,104603793.11,48.0,104.0,72.8,74.5,True,,,,34.42,BNP Paribas SA,8.6,99.92,thin WAL headroom (16 days)
+S000003882,Putnam VT Government Money Market Fund,Government,2026-08-31,76358454.4,34.0,83.0,70.35,74.82,True,,,,37.11,Goldman Sachs & Co. LLC,12.37,,
+S000003905,JPMorgan Liquid Assets Money Market Fund,Prime,2026-08-31,84818575001.65,39.0,65.0,26.98,50.07,True,SKANDINAVISKA ENSKILDA BANKEN AB/NEW YORK,4.47,17.23,18.21,SOCIETE GENERALE,3.23,98.76,thin DLA headroom (2.0 pp); thin WLA headroom (0.1 pp)
+S000003906,JPMorgan Municipal Money Market Fund,Other Tax Exempt,2026-08-31,2862375371.07,34.0,34.0,20.37,79.62,False,TENDER OPTION BOND TRUST RECEI,27.71,38.25,0.0,,,100.16,issuer concentration: TENDER OPTION BOND TRUST RECEI 27.7%
+S000003909,JPMorgan U.S. Government Money Market Fund,Government,2026-08-31,357345342300.25,32.0,97.0,56.05,74.18,True,,,,47.41,FIXED INCOME CLEARING CORPORATION (REPO BNY),9.63,97.77,
+S000003910,JPMorgan U.S. Treasury Plus Money Market Fund,Government,2026-08-31,60015981276.53,37.0,99.0,80.36,98.89,True,,,,46.75,FIXED INCOME CLEARING CORPORATION (REPO BNY),10.0,97.6,
+S000003985,ProFund VP Government Money Market,Government,2026-08-31,27601883.89,23.0,23.0,99.94,99.94,True,,,,33.6,SOCIETE' GENERALE,9.5,66.79,
+S000004031,BlackRock Summit Cash Reserves Fund,Government,2026-08-31,1149557267.55,45.0,96.0,74.59,76.13,True,,,,39.31,JP MORGAN SECURITIES LLC,7.98,100.93,
+S000004054,Morgan Stanley U.S. Government Money Market Trust,Government,2026-08-31,1134439798.67,40.0,94.0,77.28,80.11,True,,,,58.97,Bank of America NA - Fixed Income Clearing Corp.,12.34,103.09,
+S000004148,Government Portfolio,Government,2026-08-31,214137110143.68,38.0,113.0,50.75,77.58,True,Teacher Retirement System of Texas,0.47,0.47,52.87,JP Morgan Securities LLC,7.21,98.77,thin WAL headroom (7 days)
+S000004149,Government Securities Portfolio,Government,2026-08-31,5430356125.05,40.0,75.0,67.35,77.15,True,,,,0.0,,,105.25,
+S000004150,Money Market Portfolio,Prime,2026-08-31,3567362707.03,43.0,81.0,37.42,55.6,True,Societe Generale SA,4.96,23.03,52.37,Societe Generale SA,4.96,97.68,
+S000004151,Prime Portfolio,Prime,2026-08-31,14234727181.59,44.0,78.0,33.57,55.3,True,Bank of Nova Scotia,4.92,23.14,50.82,Bank of Nova Scotia,4.92,96.4,
+S000004152,Tax Exempt Portfolio,Other Tax Exempt,2026-08-31,584875531.31,18.0,18.0,,73.2,False,"RBC Municipal Products Trust Inc, Various States Certificates",8.86,27.69,0.0,,,99.62,
+S000004153,Treasury Portfolio,Government,2026-08-31,38598959824.43,42.0,112.0,71.4,96.16,True,Teacher Retirement System of Texas,1.79,1.79,64.59,JP Morgan Securities LLC,11.35,101.78,thin WAL headroom (8 days)
+S000004154,Treasury Securities Portfolio,Government,2026-08-31,65847106077.04,51.0,116.0,96.93,99.84,True,,,,0.0,,,104.85,thin WAM headroom (9 days); thin WAL headroom (4 days)
+S000004283,Money Market Master Portfolio,Prime,2026-08-31,94835944577.74,38.0,86.0,25.61,49.7,True,LANDESBANK HESSEN THUERINGEN GIROZENTRALE,4.29,16.5,25.82,JP MORGAN SECURITIES LLC,5.74,97.42,"thin DLA headroom (0.6 pp); WLA fell to 49.7% on 2026-08-20, below the 50% acquisition minimum (not a breach; restricts new purchases)"
+S000004286,Treasury Money Market Master Portfolio,Government,2026-08-31,24701133438.6,32.0,71.0,99.69,100.0,True,,,,61.75,FIXED INCOME CLEARING CORPORATION - BNYM,13.36,95.72,
+S000004391,Money Market Portfolio,Government,2026-08-31,1356050180.97,21.0,53.0,43.56,71.48,True,,,,36.84,BNP Paribas Fortis SA,4.5,,
+S000004462,Vanguard Federal Money Market Fund,Government,2026-08-31,375003028961.17,24.0,52.0,48.64,67.42,True,,,,25.79,BNP Paribas Fortis SA,3.97,,
+S000004463,Vanguard Cash Reserves Federal Money Market Fund,Government,2026-08-31,116617720361.22,24.0,52.0,48.36,67.51,True,,,,26.05,BNP Paribas Fortis SA,4.01,,
+S000004500,Schwab AMT Tax-Free Money Fund,Other Tax Exempt,2026-08-31,4379463548.77,36.0,39.0,14.19,71.45,False,Wisconsin Public Finance Auth,5.66,19.94,0.0,,,,
+S000004506,Schwab Government Money Fund,Government,2026-08-31,87615005511.15,38.0,92.0,42.04,69.4,True,RIVERSIDE HOME LENDING LP,0.09,0.21,62.41,FICC - JPMORGAN CHASE & CO,15.44,,
+S000004507,Schwab U.S. Treasury Money Fund,Government,2026-08-31,111852614215.12,47.0,79.0,100.0,100.0,True,,,,0.0,,,,
+S000004508,Schwab Prime Advantage Money Fund,Prime,2026-08-31,393048323934.36,37.0,56.0,37.91,54.93,True,TORONTO-DOMINION BANK (NEW YORK BRANCH),3.0,13.9,44.23,FICC - WELLS FARGO BANK N.A,13.61,,thin WLA headroom (4.9 pp)
+S000004511,Schwab Municipal Money Fund,Other Tax Exempt,2026-08-31,19144166599.39,35.0,37.0,17.05,72.5,False,Texas,2.92,12.82,0.0,,,,
+S000004512,Schwab California Municipal Money Fund,Single State,2026-08-31,9169872274.89,29.0,29.0,13.26,62.04,False,California,16.92,40.5,0.0,,,,issuer concentration: California 16.9%
+S000004513,Schwab New York Municipal Money Fund,Single State,2026-08-31,3251035335.32,32.0,33.0,15.25,83.36,False,New York State HFA,15.55,49.34,0.0,,,,issuer concentration: New York State HFA 15.5%
+S000004517,PGIM Government Money Market Fund,Government,2026-08-31,311692309.12,28.0,52.0,40.72,70.85,True,,,,28.1,CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK (NEW YORK BRANCH),7.06,100.17,
+S000004818,Fidelity Investments Money Market Treasury Only Portfolio,Government,2026-08-31,139842973997.76,45.0,92.0,99.0,99.0,True,,,,0.0,,,105.52,
+S000004819,Fidelity Investments Money Market Treasury Portfolio,Government,2026-08-31,88155248603.1,41.0,97.0,90.0,98.0,True,Fixed Income Clearing Corp - Credit Agricole,1.31,1.31,34.63,Citigroup Global Capital Markets Inc,3.97,102.59,
+S000004820,Fidelity Investments Money Market Government Portfolio,Government,2026-08-31,270330596532.68,34.0,97.0,57.0,71.0,True,Fixed Income Clearing Corp - Credit Agricole,1.33,1.33,33.0,Fixed Income Clearing Corp - Goldman,7.69,103.25,
+S000004822,Fidelity Investments Money Market Money Market Portfolio,Prime,2026-08-31,158032947915.94,21.0,22.0,65.0,79.0,True,JP Morgan Securities LLC,3.7,12.16,46.79,Fixed Income Clearing Corp - Goldman,7.32,102.95,
+S000004823,Fidelity Investments Money Market Tax-Exempt Portfolio,Other Tax Exempt,2026-08-31,11503819559.21,37.0,37.0,,74.0,False,Fidelity Revere Street Trust,9.02,17.14,0.0,,,101.69,
+S000005013,Nationwide Government Money Market Fund,Government,2026-08-31,589112369.44,40.0,93.0,81.28,81.64,True,,,,42.1,Canadian Imperial Bank of Commerce,12.73,101.07,
+S000005047,HSBC U.S. Government Money Market Fund,Government,2026-08-31,47290679310.19,36.0,97.0,70.03,75.17,True,State Street Institutional U.S. Government Money Market Fund - Premier Class,4.34,5.11,29.45,FIXED INCOME CLEARING CORPORATION (NORTHERN TRUST),17.59,,
+S000005052,HSBC U.S. Treasury Money Market Fund,Government,2026-08-31,8558395185.92,45.0,99.0,99.92,99.92,True,,,,0.0,,,,
+S000005087,Money Market Account,Government,2026-08-31,10849586272.99,32.0,60.0,58.78,65.83,True,,,,10.4,Fixed Income Clearing Corp. (FICC)/Northern Trust,10.4,0.95,
+S000005089,Nuveen Life Money Market Fund,Government,2026-08-31,142527689.17,32.0,58.0,59.36,65.59,True,,,,13.09,Fixed Income Clearing Corp. (FICC)/BNY Mellon,13.09,1.28,
+S000005374,Nuveen Money Market Fund,Government,2026-08-31,2038120109.58,32.0,61.0,58.42,65.01,True,,,,10.26,Fixed Income Clearing Corp. (FICC)/BNY Mellon,10.26,1.01,
+S000005409,NVIT Government Money Market Fund,Government,2026-08-31,3590882982.8,39.0,92.0,80.57,82.31,True,,,,42.91,MUFG Securities Ltd.,14.21,101.25,
+S000005493,Fidelity California Municipal Money Market Fund,Single State,2026-08-31,6917673422.31,28.0,28.0,,69.0,False,Fidelity Revere Street Trust,13.82,36.15,0.0,,,100.47,issuer concentration: Fidelity Revere Street Trust 13.8%
+S000005630,Voya Government Liquid Assets Portfolio,Government,2026-08-31,1163736684.51,26.0,58.0,54.48,58.43,True,,,,18.31,Deutsche Bank AG,18.31,,
+S000005649,Wilmington U.S. Treasury Money Market Fund,Government,2026-08-31,2117720775.21,34.0,76.0,99.89,99.89,True,"BLACKROCK LIQUIDITY T-FUND, INSTITUTIONAL SHARES",1.56,1.56,32.81,DEUTSCHE BANK REPURCHASE AGREEMENT,10.39,,
+S000005650,Wilmington U.S. Government Money Market Fund,Government,2026-08-31,9854133509.72,31.0,95.0,63.04,64.17,True,"BLACKROCK LIQUIDITY T-FUND, INSTITUTIONAL SHARES",0.53,0.53,31.25,SMBC REPURCHASE AGREEMENT,6.09,,
+S000005671, California Tax-Free Money Market Fund,Single State,2026-08-31,109135638.68,36.0,36.0,,55.49,False,University of California,10.62,38.37,0.0,,,95.7,issuer concentration: University of California 10.6%
+S000005833,CNR GOVERNMENT MM,Government,2026-08-31,7397514122.45,37.0,44.0,47.69,85.61,True,MONEY MARKET FUND,1.58,2.57,24.11,GOLDMAN SACHS,9.46,100.16,
+S000005965,Capital Preservation Fund,Government,2026-08-31,2236419193.87,50.0,64.0,99.74,99.74,True,,,,0.0,,,,
+S000006052,Fidelity New Jersey Municipal Money Market Fund,Single State,2026-08-31,1304125243.26,36.0,37.0,,71.0,False,New Jersey Health Care,28.69,52.2,0.0,,,100.11,issuer concentration: New Jersey Health Care 28.7%
+S000006073,DWS Money Market Prime Series,Prime,2026-08-31,544955175.26,18.0,42.0,46.65,65.87,True,BNP Paribas Fortis SA,4.59,20.07,38.86,Wells Fargo Bank NA,13.89,,
+S000006251,Putnam Money Market Fund,Prime,2026-08-31,925849653.88,22.0,45.0,51.15,53.24,True,Wells Fargo Bank NA,1.97,8.45,52.55,Goldman Sachs & Co. LLC,17.51,0.0,thin WLA headroom (3.2 pp)
+S000006258,DWS Government Money Market VIP,Government,2026-08-31,276154899.82,27.0,83.0,67.23,71.89,True,,,,39.5,Wells Fargo Bank NA,19.23,,
+S000006301,DWS Government & Agency Securities Portfolio,Government,2026-08-31,5569748983.98,26.0,85.0,65.58,70.16,True,,,,39.65,"Barclays Capital, Inc.",8.8,,
+S000006303,DWS Tax-Exempt Portfolio,Other Tax Exempt,2026-08-31,103700412.48,12.0,12.0,,90.55,False,Tarrant County Cultural Education Facilities Finance Corps.,5.41,23.93,0.0,,,,
+S000006308,DWS Treasury Portfolio,Government,2026-08-31,861416300.61,22.0,34.0,98.85,98.85,True,,,,58.23,"Barclays Capital, Inc.",13.93,,
+S000006473,Tax-Free Money Market Fund,Other Tax Exempt,2026-08-31,150902456.4,17.0,18.0,,87.61,False,Tender Option Bond Trust Receipts/Certificates,11.29,27.99,0.0,,,95.74,issuer concentration: Tender Option Bond Trust Receipts/Certificates 11.3%
+S000006545,Schwab Government Money Market Portfolio,Government,2026-08-31,247851994.63,37.0,92.0,42.33,70.66,True,AVENTURA BORROWERS,0.08,0.1,60.37,FICC - WELLS FARGO BANK N.A,13.7,,
+S000006582,U.S. Government Money Market Fund,Government,2026-08-31,1299147734.63,47.0,88.0,29.43,76.67,True,Jefferson Monrovia South LLC,2.82,11.72,3.04,State Street Bank & Trust Co.,3.04,42.86,thin DLA headroom (4.4 pp)
+S000006583,Prime Money Market Fund,Prime,2026-08-31,2594439693.39,50.0,89.0,27.45,52.13,True,Hqla Funding LLC,6.49,22.53,0.0,,,35.15,thin DLA headroom (2.4 pp); thin WLA headroom (2.1 pp)
+S000006722,"Penn Series Funds, Inc.",Government,2026-08-31,106136876.43,41.0,41.0,28.6,75.25,True,Goldman Sachs Financial Square Funds - Government Fund,11.34,11.34,0.0,,,,thin DLA headroom (3.6 pp); issuer concentration: Goldman Sachs Financial Square Funds - Government Fund 11.3%
+S000006773,SDIT GOVERNMENT,Government,2026-08-31,5510450397.0,41.0,103.0,63.46,78.88,True,US BANK MMDA GFS - 3,4.4,4.4,31.53,BARCLAYS BANK PL REPO,4.54,101.12,thin WAL headroom (17 days)
+S000006774,SDIT TREASURY II FUND,Government,2026-08-31,1309875463.78,40.0,77.0,99.65,99.65,True,,,,0.0,,,106.18,
+S000006776,SDIT GOVERNMENT II,Government,2026-08-31,1073275632.27,45.0,91.0,68.87,82.72,True,,,,0.0,,,100.87,
+S000006869,Lord Abbett US Government & Government Sponsored Enterprises Money Market Fund,Government,2026-08-31,1458912395.81,44.0,44.0,60.47,79.21,True,,,,19.74,JP Morgan Chase & Co.,17.14,,
+S000006897,NYLIM Money Market Fund,Prime,2026-08-31,535918260.05,39.0,39.0,61.8,61.8,True,Province of Alberta Canada,4.25,17.8,31.58,"BofA Securities, Inc.",14.0,,
+S000007051,Fidelity Government Money Market Fund,Government,2026-08-31,463114968805.41,42.0,110.0,58.0,72.0,True,Fixed Income Clearing Corp - Credit Agricole,1.31,1.31,32.22,Fixed Income Clearing Corp - Goldman,7.28,102.28,thin WAL headroom (10 days)
+S000007052,Fidelity Money Market Fund,Prime,2026-08-31,133457709722.99,21.0,22.0,65.0,79.0,True,JP Morgan Securities LLC,3.7,12.18,49.08,Fixed Income Clearing Corp - Goldman,7.32,103.05,
+S000007053,Fidelity Treasury Only Money Market Fund,Government,2026-08-31,19573377782.47,49.0,98.0,99.0,99.0,True,,,,0.0,,,104.24,
+S000007081,Money Market Fund,Prime,2026-08-31,1032282966.42,32.0,38.0,29.83,52.67,True,Verto Capital I-A LLC,2.47,12.23,15.48,Barclays Capital Inc Repurchase Agreement,3.87,100.17,thin DLA headroom (4.8 pp); thin WLA headroom (2.7 pp)
+S000007113,Fidelity Massachusetts Municipal Money Market Fund,Single State,2026-08-31,3918537388.72,35.0,35.0,,70.0,False,Massachusetts St Hlth & Ed Fac,14.95,50.66,0.0,,,99.02,issuer concentration: Massachusetts St Hlth & Ed Fac 14.9%
+S000007146,Fidelity New York Municipal Money Market Fund,Single State,2026-08-31,5082187717.35,33.0,34.0,,81.0,False,FNMA New York St Hsg Fin Agy Rev,13.94,29.84,0.0,,,99.96,issuer concentration: FNMA New York St Hsg Fin Agy Rev 13.9%
+S000007149,Fidelity Government Cash Reserves,Government,2026-08-31,246568999805.16,38.0,106.0,57.0,72.0,True,Fixed Income Clearing Corp - Credit Agricole,1.31,1.31,35.16,Fixed Income Clearing Corp - Goldman,7.28,101.22,thin WAL headroom (14 days)
+S000007179,Fidelity Cash Central Fund,Prime,2026-08-31,60173886037.41,9.0,9.0,100.0,100.0,True,DNB Bank ASA,4.86,17.64,39.7,Fixed Income Clearing Corp - BNYM,10.8,101.42,
+S000007180,Fidelity Municipal Cash Central Fund,Other Tax Exempt,2026-08-31,3506330606.78,4.0,4.0,,99.0,False,New York NY Cty Muni Wtr Fin Auth,3.86,14.67,0.0,,,99.88,
+S000007181,Fidelity Securities Lending Cash Central Fund,Prime,2026-08-31,36224300908.96,9.0,9.0,83.0,100.0,True,JP Morgan Securities LLC,2.74,6.68,58.92,Fixed Income Clearing Corp - Goldman,7.35,103.62,
+S000007182,Fidelity Tax-Free Cash Central Fund,Other Tax Exempt,2026-08-31,1779170945.18,4.0,4.0,,99.0,False,City of New York NY,3.93,15.5,0.0,,,98.14,
+S000007421,Allspring Government Money Market Fund,Government,2026-08-31,120442676663.64,39.0,111.0,61.87,71.8,True,Wells Fargo Securities,0.42,0.62,49.93,Fixed Income Clearing Corp. - Barclays,15.36,,thin WAL headroom (9 days)
+S000007425,Allspring Money Market Fund,Prime,2026-08-31,42012931747.97,37.0,71.0,26.32,49.92,True,Lexington Parker Capital Co. LLC,6.28,23.31,16.66,"Daiwa Capital Markets, Inc.",5.83,,"thin DLA headroom (1.3 pp); WLA fell to 49.9% on 2026-08-18, below the 50% acquisition minimum (not a breach; restricts new purchases)"
+S000007432,Allspring 100% Treasury Money Market Fund,Government,2026-08-31,18880766642.99,45.0,97.0,99.85,99.85,True,,,,0.0,,,,
+S000007436,Allspring National Tax-Free Money Market Fund,Other Tax Exempt,2026-08-31,2180626485.09,33.0,34.0,,67.57,False,Tender Option Bond Trust Receipts/Certificates,29.52,45.26,0.48,Fixed Income Clearing Corp. - Barclays,0.48,,issuer concentration: Tender Option Bond Trust Receipts/Certificates 29.5%
+S000007440,Allspring Treasury Plus Money Market Fund,Government,2026-08-31,25242305934.62,46.0,112.0,92.43,97.36,True,,,,47.05,MUFG Securities EMEA PLC,9.9,,thin WAL headroom (8 days)
+S000007450,The U.S. Government Money Market Portfolio,Government,2026-08-31,11620089137.15,35.0,88.0,61.79,78.55,True,,,,26.69,BNP Paribas Securities Corp.,6.02,,
+S000007502,Fidelity Municipal Money Market Fund,Other Tax Exempt,2026-08-31,3851130851.7,40.0,41.0,,73.0,False,Fidelity Revere Street Trust,12.44,20.86,0.0,,,101.04,issuer concentration: Fidelity Revere Street Trust 12.4%
+S000007504,Fidelity Tax-Exempt Money Market Fund,Other Tax Exempt,2026-08-31,4191985417.39,38.0,38.0,,74.0,False,Fidelity Revere Street Trust,10.88,19.64,0.0,,,101.89,issuer concentration: Fidelity Revere Street Trust 10.9%
+S000007505,Fidelity Treasury Money Market Fund,Government,2026-08-31,48378819233.35,37.0,94.0,90.0,98.0,True,Fixed Income Clearing Corp - Credit Agricole,1.31,1.31,37.65,Fixed Income Clearing Corp - ING,7.57,102.8,
+S000007506,North Carolina Capital Management Trust - Government Portfolio,Government,2026-08-31,20581317846.31,35.0,97.0,63.0,71.0,True,,,,24.47,Fixed Income Clearing Corp - Mizuho,9.15,101.47,
+S000007798,Transamerica Government Money Market,Government,2026-08-31,228329656.44,35.0,89.0,71.62,72.25,True,,,,47.54,"Barclays Capital, Inc.",8.1,,
+S000007924,Transamerica BlackRock Government Money Market VP,Government,2026-08-31,635942501.45,41.0,96.0,74.52,76.34,True,,,,42.3,JPMorgan Chase & Co.,6.29,,
+S000008290,Money Market Trust,Government,2026-08-31,2029534108.92,48.0,101.0,41.93,52.66,True,,,,28.74,"Tri-Party Repurchase Agreement with Barclays Capital, Inc.",12.27,,thin WAL headroom (19 days); thin WLA headroom (2.7 pp)
+S000008702,Voya Government Money Market Portfolio,Government,2026-08-31,728691945.73,26.0,58.0,54.97,58.94,True,,,,17.86,Deutsche Bank AG,17.86,,
+S000008909,Western Asset Select Tax Free Reserves,Other Tax Exempt,2026-08-31,122453694.62,4.0,4.0,44.62,99.8,False,HEALTH & EDUCATIONAL FACILITIES AUTHORITY OF THE STATE OF MISSOURI,6.88,25.86,0.0,,,99.94,
+S000008941,U.S. Treasury Fund,Government,2026-08-31,1835345349.16,32.0,32.0,99.89,99.89,True,,,,68.23,"FIXED INCOME CLEARING COPORATION (""FICC"") - NORTHERN TRUST CORP.",33.36,,
+S000008943,Government Securities Money Market,Government,2026-08-31,3327676215.73,36.0,94.0,44.45,55.65,True,FIRST AM TREAS OBLI - X,5.18,5.89,32.61,ROYAL BANK OF CANADA,10.82,,
+S000009009,GOVERNMENT CASH MANAGEMENT PORTFOLIO,Government,2026-08-31,38011156596.76,27.0,80.0,68.49,72.84,True,"Merrill Lynch & Co., Inc.",1.32,1.32,40.51,Royal Bank of Canada,8.38,,
+S000009066,Edward Jones Money Market Fund,Government,2026-08-31,32996248292.24,37.0,107.0,62.33,76.39,True,,,,51.18,Fixed Income Clearing Corp. - BNYM,11.06,88.57,thin WAL headroom (13 days)
+S000009193,EQ/MONEY MARKET PORTFOLIO,Government,2026-08-31,2728061979.61,34.0,50.0,81.43,82.65,True,,,,51.03,Credit Agricole Corporate and Investment Bank,16.5,101.07,
+S000009242,Goldman Sachs Financial Square Fund - Government,Government,2026-08-31,274430612894.72,39.0,117.0,48.36,84.77,True,,,,61.36,FIXED INCOME CLEARING CORPORATION / MIZUHO SECURITIES USA LLC,14.05,98.51,thin WAL headroom (3 days)
+S000009243,Goldman Sachs Financial Square Fund - Treasury Solutions ,Government,2026-08-31,13406127631.35,50.0,117.0,97.72,99.85,True,,,,0.0,,,111.92,thin WAL headroom (3 days)
+S000009244,Goldman Sachs Investor Fund - Tax-Exempt Money Market,Other Tax Exempt,2026-08-31,4916885786.1,27.0,27.0,16.52,73.78,False,CONNECTICUT HEALTH AND EDUCATIONAL FACILITIES AUTHORITY,7.75,23.69,0.0,,,99.19,
+S000009260,Goldman Sachs Financial Square Fund - Treasury Obligations,Government,2026-08-31,38155593656.34,43.0,118.0,64.23,98.96,True,,,,54.51,CITIGROUP GLOBAL MARKETS INC.,10.82,97.43,thin WAL headroom (2 days)
+S000009261,Goldman Sachs Financial Square Fund - Treasury Instruments,Government,2026-08-31,105268288012.76,46.0,116.0,97.72,99.87,True,,,,0.0,,,112.66,thin WAL headroom (4 days)
+S000009354,Goldman Sachs VIT - Government Money Market Fund,Government,2026-08-31,3379097618.27,40.0,118.0,47.9,83.79,True,,,,56.24,CITIGROUP GLOBAL MARKETS INC.,16.37,98.34,thin WAL headroom (2 days)
+S000009392,MoA US Government Money Market Fund,Government,2026-08-31,534393640.9,38.0,38.0,86.28,99.97,True,BNY Dreyfus Treasury Securities Treasury,0.04,0.04,0.0,,,,
+S000009447,NYLIM VP U.S. Government Money Market Portfolio,Government,2026-08-31,793834326.13,52.0,52.0,60.35,68.53,True,,,,31.26,"BofA Securities, Inc.",15.75,,thin WAM headroom (8 days)
+S000009529,FEDERATED HERMES GOVERNMENT RESERVES FUND,Government,2026-08-31,5356367965.88,37.0,103.0,69.7,75.04,True,,,,49.92,"Fixed Income Clearing Corporation (""FICC"") - BNYM",18.67,49.92,thin WAL headroom (17 days)
+S000009533,FEDERATED HERMES INSTITUTIONAL TAX-FREE CASH TRUST,Other Tax Exempt,2026-08-31,3078799631.36,6.0,6.0,0.0,99.81,False,Advent Health System/Sunbelt Obligated Group,4.9,21.02,0.0,,,97.15,
+S000009536,FEDERATED HERMES GOVERNMENT OBLIGATIONS FUND,Government,2026-08-31,178397927825.02,37.0,104.0,62.42,75.64,True,,,,49.41,"Royal Bank of Canada, Three World Financial Center Branch",4.12,49.41,thin WAL headroom (16 days)
+S000009537,FEDERATED HERMES GOVERNMENT OBLIGATIONS TAX-MANAGED FUND,Government,2026-08-31,7504243454.91,39.0,99.0,61.8,71.98,True,,,,0.0,,,,
+S000009544,FEDERATED HERMES CALIFORNIA MUNICIPAL CASH TRUST,Single State,2026-08-31,2381214169.79,46.0,47.0,0.0,53.52,False,Kaiser Permanente,13.51,34.6,0.0,,,99.12,thin WLA headroom (3.5 pp); issuer concentration: Kaiser Permanente 13.5%
+S000009546,FEDERATED HERMES CAPITAL RESERVES FUND,Prime,2026-08-31,2691174634.96,45.0,65.0,26.69,50.81,True,"Avangrid, Inc.",4.83,22.68,22.41,BNP Paribas SA,9.85,100.01,thin DLA headroom (1.7 pp); thin WLA headroom (0.8 pp)
+S000009558,FEDERATED HERMES MUNICIPAL OBLIGATIONS FUND,Other Tax Exempt,2026-08-31,6833466893.65,40.0,42.0,0.0,61.19,False,Flint Hills Resources LLC,3.31,13.29,0.0,,,97.47,
+S000009560,FEDERATED HERMES NEW YORK MUNICIPAL CASH TRUST,Single State,2026-08-31,870433856.06,48.0,49.0,0.0,64.87,False,"New York City, NY Municipal Water Finance Authority",9.75,31.58,0.0,,,90.45,
+S000009571,FEDERATED HERMES PRIME CASH OBLIGATIONS FUND,Prime,2026-08-31,103567776865.38,46.0,74.0,36.22,51.55,True,National Bank of Canada,4.71,20.66,46.04,J.P. Morgan Securities LLC,8.69,97.12,thin WLA headroom (1.5 pp)
+S000009574,FEDERATED HERMES INSTITUTIONAL PRIME OBLIGATIONS FUND,Prime,2026-08-31,16803389423.95,48.0,75.0,29.88,51.17,True,National Bank of Canada,5.05,22.59,47.14,Wells Fargo Securities LLC,9.18,100.49,thin DLA headroom (4.9 pp); thin WLA headroom (1.2 pp)
+S000009577,FEDERATED HERMES TAX-FREE OBLIGATIONS FUND,Other Tax Exempt,2026-08-31,6616651006.61,45.0,45.0,0.0,58.39,False,Nuveen AMT-Free Municipal Credit Income Fund,3.77,14.8,0.0,,,101.33,
+S000009578,FEDERATED HERMES TREASURY OBLIGATIONS FUND,Government,2026-08-31,54700909145.56,37.0,95.0,82.02,99.84,True,,,,47.01,"Fixed Income Clearing Corporation (""FICC"") - BNP",7.31,47.01,
+S000009579,FEDERATED HERMES TRUST FOR U.S. TREASURY OBLIGATIONS,Government,2026-08-31,13585694207.13,35.0,89.0,82.43,99.85,True,,,,53.82,"Fixed Income Clearing Corporation (""FICC"") - CIBC",12.88,53.82,
+S000009580,FEDERATED HERMES U.S. TREASURY CASH RESERVES,Government,2026-08-31,70418994021.63,41.0,89.0,99.92,99.92,True,,,,0.0,,,,
+S000009743,FEDERATED HERMES GOVERNMENT MONEY FUND II,Government,2026-08-31,73136608.07,35.0,94.0,67.43,79.52,True,,,,53.39,Bank of Nova Scotia,15.38,53.39,
+S000009767,State Street Navigator Securities Lending Government Money Market Portfolio,Government,2026-08-31,9441676561.7,19.0,77.0,69.83,70.27,True,,,,48.92,Fixed Income Clearing Corp. Tri Party Repo - BNYM,16.74,,
+S000009943,AZL Government Money Market Fund,Government,2026-08-31,427099032.35,37.0,92.0,75.4,76.48,True,,,,40.5,SUMITOMO MITSUI TRUST HOLDINGS LTD,6.32,100.74,
+S000010466,Janus Henderson Government Money Market Fund,Government,2026-08-31,446117537.16,19.0,36.0,49.82,76.5,True,LAM 204 LLC,2.13,8.35,37.1,"Royal Bank of Canada/New York NY, Joint Repurchase Agreement",7.96,100.21,
+S000010472,Janus Henderson Money Market Fund,Prime,2026-08-31,1284502873.39,30.0,30.0,42.5,60.38,True,Manhattan Asset Funding Co. LLC,4.27,17.48,38.9,"Goldman Sachs & Co LLC, Joint Repurchase Agreement",8.56,100.48,
+S000010524,Daily Income Fund,Government,2026-08-31,214980715.41,42.0,107.0,55.03,78.94,True,State Street Institutional U.S. Government Money Market Fund,0.19,0.19,34.89,Credit Agricole Tri Party Repurchase Agreement,9.3,,thin WAL headroom (13 days)
+S000010686,State Street U.S. Government Money Market Portfolio,Government,2026-08-31,213208083239.67,33.0,87.0,81.23,82.39,True,,,,45.06,Fixed Income Clearing Corp. Tri Party Repo - BNYM,27.77,,
+S000010883,Saratoga U.S. Government Money Market Portfolio,Government,2026-08-31,4049853.64,1.0,1.0,99.54,99.54,True,BlackRock Liquidity FedFund,24.87,99.48,0.0,,,,issuer concentration: BlackRock Liquidity FedFund 24.9%
+S000011750,Payden Cash Reserves Money Market Fund,Government,2026-08-31,326699907.72,32.0,35.0,63.9,89.86,True,BNY DREYFUS TREASURY OBLIGAT,0.98,0.98,35.5,BMO CAPITAL MARKETS CORP.,9.49,99.86,
+S000011834,Elfun Government Money Market Fund,Government,2026-08-31,105001852.21,34.0,83.0,83.28,83.74,True,,,,45.18,Fixed Income Clearing Corp. Tri Party Repo - WF,14.28,,
+S000011990,"AB Fixed-Income Shares, Inc. - AB Government Money Market Portfolio",Government,2026-08-31,23619721574.07,45.0,77.0,69.08,69.4,True,,,,33.83,Fixed Income Clearing Corp. (FICC)/Mizuho Securities USA LLC,9.46,,
+S000012906,Victory Money Market Fund,Prime,2026-08-31,1995348393.8,21.0,34.0,36.54,58.41,True,DAIRY FARMERS OF AMERICA,4.76,23.54,0.0,,,99.96,
+S000012917,Victory Tax Exempt Money Market Fund,Other Tax Exempt,2026-08-31,398243743.2,6.0,6.0,0.0,99.69,False,IOWA FINANCE AUTHORITY,6.87,25.45,0.0,,,98.53,
+S000012919,Victory Treasury Money Market Trust,Government,2026-08-31,1068694943.73,44.0,44.0,99.98,99.98,True,,,,25.36,"FIXED INCOME CLEARING CORPORATION (""FICC"") - STATE STREET BANK & TRUST CO.",25.36,99.76,
+S000015108,BBH U.S. Government Money Market Fund,Government,2026-08-31,7313224773.08,32.0,32.0,99.99,99.99,True,,,,20.52,BNP Paribas,5.13,,
+S000016030,The United States TreasuryTrust,Government,2026-08-31,22720054.35,40.0,40.0,99.94,99.94,True,,,,0.0,,,100.4,
+S000017648,VIP Government Money Market Portfolio,Government,2026-08-31,10415744831.07,37.0,105.0,54.0,71.0,True,Fixed Income Clearing Corp - Credit Agricole,1.32,1.32,33.01,Fixed Income Clearing Corp - Goldman,7.28,101.9,thin WAL headroom (15 days)
+S000017728,MFS Institutional Money Market Portfolio,Prime,2026-08-31,5369627725.81,38.0,38.0,58.97,70.39,True,Australia & New Zealand Banking Group Ltd.,4.06,15.23,15.13,Fixed Income Clearing Corp./State Street Bank & Trust Co. Repurchase Agreement,13.96,,
+S000018041,Liquid Reserve Portfolio,Prime,2026-08-31,7929064634.54,15.0,16.0,52.19,65.06,True,MIZUHO BANK LTD/NY,4.09,15.1,41.3,FIXED INCOME CLEARING CORP / BNY,24.59,95.49,
+S000018042,U.S. Treasury Reserves Portfolio,Government,2026-08-31,19531488981.61,43.0,97.0,99.85,99.85,True,,,,0.0,,,102.57,
+S000019503,Treasury Master Fund,Government,2026-08-31,40559016407.49,32.0,58.0,99.96,99.96,True,,,,45.62,Fixed Income Clearing Corp. - State Street Bank and Trust Co.,30.65,,
+S000019849,Columbia Variable Portfolio - Government Money Market Fund,Government,2026-08-31,538352805.8,44.0,102.0,38.04,62.72,True,,,,42.72,RBC DOMINION SECURITIES INC,30.65,97.61,thin WAL headroom (18 days)
+S000019933,State Street Treasury Money Market Portfolio,Government,2026-08-31,14856854671.64,40.0,78.0,99.85,99.85,True,,,,0.0,,,,
+S000019934,State Street Treasury Plus Money Market Portfolio,Government,2026-08-31,73233278826.79,34.0,69.0,98.47,99.2,True,,,,49.94,Fixed Income Clearing Corp. Tri Party Repo - Morgan Stanley,23.28,,
+S000021488,BNY Dreyfus Institutional Preferred Government Money Market,Government,2026-08-31,33248652529.66,41.0,94.0,79.51,81.02,True,,,,41.41,J.P. MORGAN WEALTH MANAGEMENT,13.91,99.28,
+S000021490,BNY Dreyfus Institutional Preferred Treasury Obligations,Government,2026-08-31,888151002.94,31.0,69.0,99.85,99.85,True,,,,61.37,ABN AMRO BANK NV,22.52,101.42,
+S000023949,Treasury Portfolio,Government,2026-08-31,104384114084.5,40.0,101.0,93.95,99.83,True,,,,45.81,FIXED INCOME CLEARING CORP-STATE STREET,29.29,,thin WAL headroom (19 days)
+S000024337,PIMCO Government Money Market Fund,Government,2026-08-31,4203622794.77,1.0,1.0,99.97,99.97,True,,,,100.24,Citigroup Repo,24.21,,
+S000025394,American Funds U.S. Government Money Market Fund,Government,2026-08-31,34688005792.9,34.0,49.0,62.98,88.14,True,,,,13.84,JP MORGAN SECURITIES LLC,2.31,102.93,
+S000025611,Government Portfolio,Government,2026-08-31,30334155598.41,37.0,109.0,61.01,68.23,True,,,,28.14,WELLS FARGO SECURITIES LLC,4.44,97.95,thin WAL headroom (11 days)
+S000027049,DWS Central Cash Management Government Fund,Government,2026-08-31,458233104.56,27.0,85.0,52.42,58.53,True,,,,35.97,Wells Fargo Bank NA,22.0,,
+S000031364,Columbia Government Money Market Fund,Government,2026-08-31,2763023358.74,47.0,99.0,38.13,62.84,True,,,,27.5,TD SECURITIES (USA) LLC,13.93,97.92,
+S000032449,Columbia Short-Term Cash Fund,Prime,2026-08-31,14592825028.98,45.0,105.0,26.91,52.81,True,CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK (NEW YORK BRANCH),4.12,15.47,0.75,RBC DOMINION SECURITIES INC,0.75,97.18,thin WAL headroom (15 days); thin DLA headroom (1.9 pp); thin WLA headroom (2.8 pp)
+S000036659,Schwab Treasury Obligations Money Fund,Government,2026-08-31,71254310350.56,37.0,77.0,68.74,96.72,True,,,,65.39,FICC - JPMORGAN CHASE & CO,31.55,,
+S000042914,U.S. Treasury Obligations Portfolio,Government,2026-08-31,912398728.37,22.0,28.0,99.95,99.95,True,,,,27.96,"JP MORGAN SECURITIES, LLC",8.22,107.92,
+S000044713,Pacific Capital U.S. Government Money Market Fund ,Government,2026-08-31,0.0,0.0,0.0,0.0,0.0,True,CASH,0.0,0.0,0.0,,,,"DLA fell to 0.0% on 2026-08-03, below the 12.5% board-notification threshold; WLA fell to 0.0% on 2026-08-03, below the 25% board-notification threshold"
+S000048934,Collateral Trust,Government,2026-08-31,1845361789.53,52.0,99.0,39.93,54.08,True,,,,27.96,"Tri-Party Repurchase Agreement with Goldman Sachs Group, Inc.",11.27,,thin WAM headroom (8 days); thin WLA headroom (4.1 pp)
+S000051190,Goldman Sachs Financial Square Fund - Federal Instruments,Government,2026-08-31,8034234498.36,47.0,117.0,68.69,84.83,True,,,,0.0,,,113.19,thin WAL headroom (3 days)
+S000051191,Goldman Sachs Investor Fund - Money Market,Prime,2026-08-31,12571245827.48,43.0,97.0,39.14,54.13,True,GOLDMAN SACHS TRUST - GOLDMAN SACHS CENTRAL GOVERNMENT FUND,12.62,25.99,18.44,THE BANK OF NOVA SCOTIA,3.98,86.59,thin WLA headroom (4.1 pp); issuer concentration: GOLDMAN SACHS TRUST - GOLDMAN SACHS CENTRAL GOVERNMENT FUND 12.6%
+S000052894,Putnam Government Money Market Fund,Government,2026-08-31,787350316.29,28.0,77.0,71.82,76.13,True,,,,47.71,Bank of Montreal,13.02,,
+S000053209,Prime CNAV Master Fund,Prime,2026-08-31,23067190647.4,30.0,56.0,44.96,50.68,True,BNP Paribas Securities Corp. Tri Party repo,3.34,14.43,37.44,Fixed Income Clearing Corp. - State Street Bank and Trust Co.,23.84,96.55,thin WLA headroom (0.7 pp)
+S000053607,Fidelity Series Government Money Market Fund,Government,2026-08-31,2914496097.02,40.0,115.0,57.0,72.0,True,Fixed Income Clearing Corp - Credit Agricole,1.26,1.26,30.16,Fixed Income Clearing Corp - Goldman,7.03,97.98,thin WAL headroom (5 days)
+S000053802,Schwab Retirement Government Money Fund,Government,2026-08-31,963514667.63,38.0,89.0,43.08,66.23,True,RIVERSIDE HOME LENDING LP,0.44,0.92,61.7,FICC - WELLS FARGO BANK N.A,13.39,,
+S000054189,Government Master Fund,Government,2026-08-31,23792623547.83,33.0,95.0,60.0,72.02,True,,,,26.68,Fixed Income Clearing Corp. - State Street Bank and Trust Co.,18.07,1.79,
+S000055222,Meeder Government Money Market Fund,Government,2026-08-31,2120839214.83,36.0,67.0,45.44,82.03,True,GLDMN SCHS FIN SQ,6.39,8.83,0.0,,,,
+S000055237,PGIM Institutional Money Market Fund ,Prime,2026-08-31,10039901277.17,36.0,88.0,30.29,51.28,True,COOPERATIEVE RABOBANK UA (NEW YORK BRANCH),3.33,14.41,18.61,CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK (NEW YORK BRANCH),5.3,99.31,thin WLA headroom (1.3 pp)
+S000056215,Limited Purpose Cash Investment Fund,Government,2026-08-31,12964656136.76,29.0,64.0,90.56,91.09,True,,,,44.15,J.P. Morgan Securities LLC Tri Party Repo,15.43,0.43,
+S000056367,Fidelity Flex Government Money Market Fund,Government,2026-08-31,221650636.29,44.0,109.0,56.0,74.0,True,Fixed Income Clearing Corp - Credit Agricole,1.35,1.35,25.24,Fixed Income Clearing Corp - Morgan Stanley,4.05,92.76,thin WAL headroom (11 days)
+S000058876,Treasury Instruments Portfolio,Government,2026-08-31,12029035098.92,41.0,98.0,91.24,99.93,True,,,,0.0,,,,
+S000059809,BNY Dreyfus Treasury &amp; Agency Liquidity Money Market Fund,Government,2026-08-31,9378944296.22,1.0,1.0,99.97,99.97,True,,,,100.27,CITIGROUP GLOBAL MARKETS,27.72,100.27,
+S000059873,Fidelity SAI Municipal Money Market Fund,Other Tax Exempt,2026-08-31,45286951.05,7.0,7.0,,99.0,False,Fidelity Revere Street Trust,99.62,99.62,0.0,,,99.62,issuer concentration: Fidelity Revere Street Trust 99.6%
+S000060089,Government Money Market Fund,Government,2026-08-31,4215334962.27,26.0,49.0,49.07,75.7,True,Invesco Government & Agency Portfolio - Institutional Class,3.21,6.49,35.11,The Bank of New York Mellon Repurchase Agreement,5.69,100.25,
+S000061245,JPMorgan Institutional Tax Free Money Market Fund,Other Tax Exempt,2026-08-31,2811289998.97,5.0,5.0,32.54,99.66,False,TENDER OPTION BOND TRUST RECEI,19.87,41.82,0.0,,,100.03,issuer concentration: TENDER OPTION BOND TRUST RECEI 19.9%
+S000062062,NTAM Treasury Assets Fund,Government,2026-08-31,5785920023.61,35.0,98.0,99.91,99.91,True,,,,44.98,CITIGROUP GLOBAL MARKETS INC,16.46,,
+S000063113,JPMorgan Securities Lending Money Market Fund,Government,2026-08-31,2073182956.71,9.0,96.0,67.24,70.04,True,,,,53.97,BOFA SECURITIES INC (REPO),10.57,100.36,
+S000063122,NYLIM U.S. Government Liquidity Fund,Government,2026-08-31,1002332733.05,50.0,50.0,100.0,100.0,True,,,,0.0,,,,
+S000064656,Invesco V.I. U.S. Government Money Portfolio,Government,2026-08-31,236976918.99,50.0,107.0,55.31,80.19,True,,,,31.95,Royal Bank of Canada,7.17,0.0,thin WAL headroom (13 days)
+S000064669,Invesco U.S. Government Money Portfolio,Government,2026-08-31,1088080713.49,48.0,113.0,59.45,76.51,True,,,,31.94,TD Securities (USA) LLC,10.11,0.0,thin WAL headroom (7 days)
+S000064714,Capital Group Central Fund Series - Capital Group Central Cash Fund,Government,2026-08-31,121095525769.61,32.0,44.0,67.79,89.69,True,,,,13.46,JP MORGAN SECURITIES LLC,2.23,101.69,
+S000064982,North Capital Treasury Money Market Fund,Government,2026-08-31,90121764.18,25.0,25.0,83.8,83.8,True,,,,0.0,,,,
+S000066947,Voya Government Money Market Fund,Government,2026-08-31,415122914.33,26.0,59.0,55.2,60.41,True,,,,16.5,Deutsche Bank AG,16.5,,
+S000067043,Franklin OnChain U.S. Government Money Fund,Government,2026-08-31,686635362.22,37.0,113.0,63.47,69.72,True,,,,14.56,Bank of America Corp.,7.28,,thin WAL headroom (7 days)
+S000074975,Government Obligations Fund,Government,2026-08-31,129554358832.2,35.0,101.0,52.7,72.6,True,Goldman Sachs Financial Square Money Market Fund,0.19,0.76,36.38,FICC/BNP Paribas,14.49,37.14,thin WAL headroom (19 days)
+S000074976,Institutional Prime Obligations Fund,Prime,2026-08-31,1060119001.34,1.0,2.0,67.0,100.0,True,Exxon Mobil Corp,4.24,21.2,55.01,Bank of Nova Scotia,17.26,100.25,
+S000074977,Retail Prime Obligations Fund,Prime,2026-08-31,2913590450.2,18.0,36.0,51.9,58.9,True,"DNB Bank ASA, New York Branch",4.8,23.74,40.16,Bank of Nova Scotia,5.0,100.36,
+S000074978,Retail Tax Free Obligations Fund,Other Tax Exempt,2026-08-31,412489394.95,28.0,28.0,6.6,71.2,False,ILLINOIS FINANCE AUTH,14.45,33.08,0.0,,,99.66,issuer concentration: ILLINOIS FINANCE AUTH 14.5%
+S000074979,Treasury Obligations Fund,Government,2026-08-31,58512332010.26,40.0,92.0,83.5,96.8,True,,,,45.1,FICC/BNP Paribas,17.85,45.1,
+S000074980,U.S. Treasury Money Market Fund,Government,2026-08-31,9303910840.2,43.0,97.0,96.4,96.4,True,,,,0.0,,,,
+S000077205,Circle Reserve Fund,Government,2026-08-31,62317374427.07,9.0,9.0,99.62,100.0,True,,,,79.57,GOLDMAN SACHS & CO LLC,17.01,98.69,
+S000080446,PGIM Core Government Money Market Fund ,Government,2026-08-31,6437100494.63,29.0,53.0,43.11,68.53,True,,,,32.67,CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK (NEW YORK BRANCH),9.31,89.63,
+S000080765,"Popular U.S. Government Money Market Fund, LLC",Government,2026-08-31,1573062465.01,3.0,3.0,41.26,99.98,True,,,,6.36,FIXED INCOME CLEARING CORPORATION (REPO BNY),6.36,,
+S000082184,WisdomTree Treasury Money Market Digital Fund,Government,2026-08-31,1020523959.22,19.0,39.0,99.88,99.88,True,BLACKROCK SELECT TREASURY BASED LIQUIDITY FUND,0.0,0.0,21.45,DEUTSCHE BANK AG,19.0,,
+S000082305,Texas Capital Government Money Market Fund,Government,2026-08-31,344780035.72,48.0,71.0,94.78,94.82,True,State Street Institutional US Government Money,6.35,6.35,34.22,MIRAE ASSET SECURITIES (USA)  REPO,30.74,,
+S000083789,XD Treasury Money Market Fund,Government,2026-08-31,878529.61,43.0,43.0,99.78,99.78,True,,,,0.0,,,,
+S000084495,M3Sixty Onchain U.S. Government Money Market Fund,Government,2026-08-31,117090.13,11.0,11.0,98.8,98.8,True,Goldman Sachs Financial Square Treasury Instruments Fund,24.67,24.67,0.0,,,88.63,issuer concentration: Goldman Sachs Financial Square Treasury Instruments Fund 24.7%
+S000085171,100% US Treasury Master Fund,Government,2026-08-31,19213655212.4,41.0,60.0,99.98,99.98,True,,,,0.0,,,,
+S000085371,TCW Central Cash Fund,Government,2026-08-31,2872923267.86,23.0,41.0,50.48,68.92,True,State Street Institutional U.S. Government Money Market Fund,0.16,0.16,62.64,BANK OF AMERICA NA,17.4,,
+S000086404,Goldman Sachs Investor Tax-Exempt California Money Market Fund,Single State,2026-08-31,11955946.53,48.0,48.0,33.36,71.52,False,REGENTS OF THE UNIVERSITY OF CALIFORNIA (THE),13.3,35.0,0.0,,,99.02,issuer concentration: REGENTS OF THE UNIVERSITY OF CALIFORNIA (THE) 13.3%
+S000086405,Goldman Sachs Investor Tax-Exempt New York Money Market Fund,Single State,2026-08-31,81374724.57,31.0,31.0,25.12,80.55,False,NEW YORK CITY MUNICIPAL WATER FINANCE AUTHORITY,13.31,34.89,0.0,,,96.91,issuer concentration: NEW YORK CITY MUNICIPAL WATER FINANCE AUTHORITY 13.3%
+S000086506,Texas Capital Government Money Market ETF,Government,2026-08-31,72651128.68,42.0,50.0,97.35,97.35,True,State Street Institutional US Government Money,1.22,1.22,49.83,MIRAE ASSET SECURITIES (USA)  REPO,49.83,,
+S000089156,Fidelity Treasury Digital Fund,Government,2026-08-31,51616643.26,20.0,20.0,100.0,100.0,True,,,,0.0,,,100.04,
+S000089750,Victory Pioneer U.S. Government Money Market Fund,Government,2026-08-31,237133398.58,10.0,18.0,99.95,99.95,True,,,,40.08,ROYAL BANK OF CANADA,10.02,,
+S000089874,iShares Government Money Market ETF,Government,2026-08-31,190581893.57,45.0,106.0,77.86,78.59,True,,,,0.0,,,100.65,thin WAL headroom (14 days)
+S000089875,iShares Prime Money Market ETF,Prime,2026-08-31,725261984.61,40.0,87.0,39.89,49.91,True,BNP Paribas SA,2.65,12.0,42.9,BNP Paribas SA,10.9,99.8,"WLA fell to 49.9% on 2026-08-27, below the 50% acquisition minimum (not a breach; restricts new purchases)"
+S000091773,DGI U.S. Government Money Market Fund,Government,2026-08-31,21946473.52,4.0,4.0,82.84,99.79,True,,,,0.0,,,,
+S000092777,Schwab Government Money Market ETF,Government,2026-08-31,902853318.37,38.0,94.0,43.57,72.65,True,,,,66.93,FICC - JPMORGAN CHASE & CO,24.14,,
+S000093200,"Atlas U.S. Government Money Market Fund, Inc",Government,2026-08-31,90900865.03,1.0,1.0,99.86,99.86,True,,,,20.9,"Atlas U.S. Tactical Income Fund, Inc.",20.9,,
+S000093622,Simplify Government Money Market ETF,Government,2026-08-31,4822379729.42,43.0,117.0,35.74,68.23,True,DREYFUS TREASURY OBLIGATIONS CASH MANAGEMENT,0.02,0.02,14.23,WELLS FARGO REPO,14.23,,thin WAL headroom (3 days)
+S000095204,Lazard Government Money Market Portfolio,Government,2026-08-31,1481546948.87,38.0,71.0,79.05,87.47,True,,,,38.64,State Street Bank - Fixed Income Clearing Corp.,38.64,,
+S000095264,JPMorgan 100% U.S. Treasury Securities Money Market ETF,Government,2026-08-31,81103873.75,37.0,89.0,99.92,99.92,True,,,,0.0,,,107.13,
+S000095551,Wealthfront Treasury Money Market Fund,Government,2026-08-31,277110902.47,38.0,38.0,100.0,100.0,True,JPMorgan US Government Money M,0.03,0.03,0.0,,,,
+S000096115,Stablecoin Reserves Fund,Government,2026-08-31,104654584.72,1.0,1.0,99.94,99.94,True,,,,99.37,FIXED INCOME CLEARING CORPORATION / STATE STREET BANK AND TRUST COMPANY,38.22,52.55,
+S000096464,BNY Dreyfus Stablecoin Reserves Fund,Government,2026-08-31,35725110.02,15.0,15.0,99.89,99.89,True,,,,51.78,BOFA SECURITIES INC,20.99,104.81,
+S000097155,Rareview Government Money Market ETF,Government,2026-08-31,32109413.77,44.0,44.0,99.9,99.9,True,,,,0.0,,,,
+S000099945,ProShares GENIUS Money Market ETF,Government,2026-08-31,19539486097.54,33.0,33.0,100.0,100.0,True,,,,0.0,,,99.96,
+S000100105,State Street Prime Money Market ETF,Prime,2026-08-31,29092062.01,38.0,76.0,31.76,50.37,True,Goldman Sachs & Co. LLC Tri Party Repo,8.07,20.93,28.18,Goldman Sachs & Co. LLC Tri Party Repo,8.07,,thin WLA headroom (0.4 pp)
+S000101071,State Street Stablecoin Reserves Money Market Fund,Government,2026-08-31,106096152.89,8.0,8.0,99.98,99.98,True,,,,75.43,Wells Fargo Securities LLC Tri Party Repo,14.14,,
+S000101207,State Street Prime Retail Reserves Money Market Fund,Prime,2026-08-31,105383210.74,32.0,69.0,38.2,49.35,True,Credit Agricole Corporate and Investment Bank Tri Party Repo,5.93,21.43,35.03,Goldman Sachs & Co. LLC Tri Party Repo,10.2,,"WLA fell to 49.4% on 2026-08-06, below the 50% acquisition minimum (not a breach; restricts new purchases)"
+S000101569,FEDERATED HERMES MONEY MARKET MANAGEMENT DIGITAL TREASURY FUND,Government,2026-08-31,25100000.01,5.0,5.0,99.97,99.97,True,,,,90.26,Barclays Bank plc,24.7,90.26,
+S000101661,Stablecoin Reserves Portfolio,Government,2026-08-31,5000025.68,19.0,19.0,91.11,97.64,True,,,,60.0,Northern Trust Co. - Fixed Income Clearing Corp.,20.0,101.81,
+S000101820,JPMorgan OnChain Liquidity-Token Money Market Fund,Government,2026-08-31,777285204.81,13.0,13.0,99.99,99.99,True,,,,48.13,BOFA SECURITIES INC (REPO),19.24,101.72,
+S000102982,Goldman Sachs Central Government Fund,Government,2026-08-31,9784362953.69,41.0,119.0,53.26,89.52,True,,,,57.22,J.P. MORGAN SECURITIES LLC,10.8,93.94,thin WAL headroom (1 days)
+S000105361,Fidelity Reserves Digital Fund,Government,2026-08-31,5029751.0,5.0,5.0,71.0,99.0,True,Fixed Income Clearing Corp - Credit Agricole,19.88,19.88,60.28,Fixed Income Clearing Corp - Credit Agricole,39.76,119.88,issuer concentration: Fixed Income Clearing Corp - Credit Agricole 19.9%
+S000105981,BNY Dreyfus On-Chain Liquidity Fund,Government,2026-08-31,25000000.0,16.0,16.0,99.9,99.9,True,,,,18.0,NORTHERN TRUST COMPANY - FIXED INCOME CLEARING CORP,18.0,109.42,
+S000106600,BlackRock Daily Reinvestment Stablecoin Reserve Vehicle,Government,2026-08-31,50134862.5,16.0,16.0,100.0,100.0,True,,,,0.0,,,99.83,

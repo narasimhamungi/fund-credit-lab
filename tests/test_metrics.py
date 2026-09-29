@@ -103,10 +103,21 @@ def test_category_mix_sorted_and_summed(by_id):
 
 def test_rating_coverage_counts_security_ratings_only(by_id):
     rc = by_id["S000000001"]["rating_coverage"]
-    assert rc["securities"] == 5
-    assert rc["rated_share"] == pytest.approx(2 / 5)   # guarantor rating does not count
-    assert rc["by_agency"]["Fitch"] == pytest.approx(1 / 5)
-    assert set(rc["by_agency"]) == {"S&P", "Fitch", "Moody's"}
+    assert rc["reported"] is True and rc["securities"] == 5
+    assert rc["rated_share"] == pytest.approx(3 / 5)          # guarantor rating does not count
+    assert rc["rated_pct_of_assets"] == pytest.approx(14)     # 5% + 6% + 3%
+
+
+def test_agency_names_are_normalised(by_id):
+    # Regression: live filings name one agency several ways ('Fitch Long Rating', 'Fitch Short Rating').
+    by = by_id["S000000001"]["rating_coverage"]["by_agency"]
+    assert set(by) == {"S&P", "Fitch", "Moody's", "agency not named"}
+    assert by["Fitch"] == pytest.approx(1 / 5)                # one security, counted once
+
+
+def test_filing_without_rating_rows_is_marked_not_reported(by_id):
+    rc = by_id["S000000002"]["rating_coverage"]
+    assert rc["reported"] is False and rc["rated_share"] is None
 
 
 def test_explicit_report_date_filter(nmfp_zip):

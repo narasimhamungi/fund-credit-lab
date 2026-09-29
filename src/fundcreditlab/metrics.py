@@ -103,19 +103,44 @@ def category_mix(sec: pd.DataFrame) -> dict[str, float]:
     return {k: float(v) for k, v in mix.items()}
 
 
+_AGENCIES = (("fitch", "Fitch"), ("moody", "Moody's"), ("standard", "S&P"), ("s&p", "S&P"),
+             ("dbrs", "DBRS Morningstar"), ("morningstar", "DBRS Morningstar"), ("kroll", "KBRA"),
+             ("kbra", "KBRA"))
+UNNAMED_AGENCY = "agency not named"
+
+
+def agency(name) -> str:
+    """Normalise NAMEOFNRSRO: live filings name one agency several ways ('Fitch Long Rating',
+    'Fitch Short Rating', 'Standard and Poor's Ratings Services', 'Standard & Poor's Long Rating')."""
+    if not isinstance(name, str) or not name.strip():
+        return UNNAMED_AGENCY
+    low = name.lower()
+    for key, label in _AGENCIES:
+        if key in low:
+            return label
+    return name.strip()
+
+
 def rating_coverage(sec: pd.DataFrame, nrsro: pd.DataFrame) -> dict:
-    """Share of securities carrying at least one NRSRO rating on the security itself, and
-    the share rated by each agency. Ratings are NOT mapped across agencies: scales differ."""
+    """Security-level NRSRO ratings as filed: share of securities with at least one rating,
+    the same share weighted by % of net assets, and the share rated by each agency.
+    Ratings are NOT mapped across agencies: scales differ. reported=False means the filing
+    carries no rating rows at all."""
     n = len(sec)
+    out = {"securities": n, "reported": False, "rated_share": None, "rated_pct_of_assets": None,
+           "by_agency": {}}
     if n == 0 or nrsro.empty:
-        return {"securities": n, "rated_share": None, "by_agency": {}}
-    r = nrsro[nrsro["TYPE"].str.upper() == "SECURITY"]
+        return out
+    r = nrsro[nrsro["TYPE"].astype(str).str.upper() == "SECURITY"]
+    r = r[r["RATING"].notna()] if "RATING" in r.columns else r
+    r = r.assign(AGENCY=r["NAMEOFNRSRO"].map(agency))
     r = r.merge(sec[["ACCESSION_NUMBER", "SECURITY_ID"]], on=["ACCESSION_NUMBER", "SECURITY_ID"])
-    rated = r.drop_duplicates(["ACCESSION_NUMBER", "SECURITY_ID"]).shape[0]
-    by_agency = (r.drop_duplicates(["ACCESSION_NUMBER", "SECURITY_ID", "NAMEOFNRSRO"])
-                 .groupby("NAMEOFNRSRO").size() / n)
-    return {"securities": n, "rated_share": rated / n,
-            "by_agency": {k: float(v) for k, v in by_agency.items()}}
+    rated_ids = set(r["SECURITY_ID"])
+    by_agency = r.drop_duplicates(["SECURITY_ID", "AGENCY"]).groupby("AGENCY").size() / n
+    out.update(reported=True, rated_share=len(rated_ids) / n,
+               rated_pct_of_assets=float(sec.loc[sec["SECURITY_ID"].isin(rated_ids), PCT].sum()),
+               by_agency={k: float(v) for k, v in by_agency.items()})
+    return out
 
 
 def _low_point(liq: pd.DataFrame, col: str) -> tuple[float | None, str | None]:

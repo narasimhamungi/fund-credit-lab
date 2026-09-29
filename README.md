@@ -20,9 +20,9 @@ credit-profile memo.
 - [x] Liquidity stress: rolling worst net outflow and instantaneous redemption shocks
 - [x] Memo renderer and CLI
 - [x] Unit tests on synthetic fixtures written in the live SEC layout
-- [ ] Run on a real SEC data set and commit dated outputs to `outputs/` (pending)
-
-Until the last box is ticked, treat results as unvalidated on live data.
+- [x] Run on the live SEC data set for 31 Aug 2026: 295 funds, outputs in `outputs/2026-08/`
+- [x] Net assets, WAM, WAL and liquidity checked against sponsor disclosures for two funds (`docs/validation.md`)
+- [ ] Concentration, repo and ratings reconciled to a published holdings file
 
 ## Run
 
@@ -49,6 +49,6 @@ Output: `summary.csv` (one row per series), `findings.csv` (data-quality finding
 | `src/fundcreditlab/metrics.py` | Per-series profile metrics |
 | `src/fundcreditlab/stress.py` | Liquidity stress |
 | `src/fundcreditlab/report.py` | Memo rendering |
-| `docs/` | Data dictionary, engineering decisions, limitations and regulatory sources |
+| `docs/` | Data dictionary, engineering decisions, limitations, regulatory sources and live-data validation |
 
 Read `docs/limitations.md` before using any output.

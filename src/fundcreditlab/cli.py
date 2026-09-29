@@ -13,7 +13,7 @@ from .validate import validate
 
 SUMMARY_COLUMNS = ["series_id", "name", "category", "report_date", "net_assets", "wam", "wal",
                    "dla_min_pct", "wla_min_pct", "dla_tested", "top1_issuer", "top1_pct", "top5_pct",
-                   "repo_pct", "top_repo_counterparty", "top_repo_counterparty_pct", "flags"]
+                   "repo_pct", "top_repo_counterparty", "top_repo_counterparty_pct", "rated_pct_of_assets", "flags"]
 
 
 def _r(v, digits=2):
@@ -56,6 +56,7 @@ def main(argv: list[str] | None = None) -> int:
                         m["net_assets"], m["wam"], m["wal"], _r(m["dla_min_pct"]), _r(m["wla_min_pct"]),
                         m["dla_tested"], c["top1_issuer"], _r(c["top1_pct"]), _r(c["top5_pct"]),
                         _r(r["repo_pct"]), r["top_counterparty"], _r(r["top_counterparty_pct"]),
+                        _r(m["rating_coverage"]["rated_pct_of_assets"]),
                         "; ".join(m["flags"])])
     series_of = {m["accession"]: m["series_id"] for m in results}
     with open(out / "findings.csv", "w", newline="", encoding="utf-8") as fh:

@@ -95,10 +95,14 @@ def build_tables():
         sec("0006-26-000001", 2, "STATE A GO", "Other Municipal Security", 45),
         sec("0007-26-000001", 1, "MASTER PRIME PORTFOLIO", "Investment Company", 100),
     ]
-    nr = [
-        dict(ACCESSION_NUMBER=a, SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO="S&P", RATING="A-1+"),
-        dict(ACCESSION_NUMBER=a, SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO="Fitch", RATING="F1+"),
-        dict(ACCESSION_NUMBER=a, SECURITY_ID=2, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO="Moody's", RATING="P-1"),
+    nr = [   # agency names as they appear in live filings; one agency can be named several ways
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY",
+             NAMEOFNRSRO="Standard and Poor's Ratings Services", RATING="A-1+"),
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO="Fitch Short Rating", RATING="F1+"),
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO="Fitch Long Rating", RATING="AA"),
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=2, IDENTITY=None, TYPE="SECURITY",
+             NAMEOFNRSRO="Moody's Investors Service, Inc.", RATING="P-1"),
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=4, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO=None, RATING="A-1"),
         dict(ACCESSION_NUMBER=a, SECURITY_ID=3, IDENTITY="GUARANTOR CO", TYPE="GUARANTOR",
              NAMEOFNRSRO="Fitch", RATING="AAA"),
     ]
