@@ -57,6 +57,9 @@ def render_memo(m: dict, findings: list[Finding] | None = None, limits: Limits =
         L.append(f"- **Rating coverage (as filed):** {rc['rated_share']:.0%} of {rc['securities']} securities, "
                  f"{rc['rated_pct_of_assets']:.1f}% of net assets, carry a security-level NRSRO rating "
                  f"({agencies}). Ratings are shown per agency, not mapped across scales.")
+    elif rc["status"] == "placeholder_only":
+        L.append("- **Rating coverage:** the filing lists NRSRO entries only as placeholders (e.g. 'N/A'), so no "
+                 "ratings are reported. Absence in the data does not mean the holdings are unrated.")
     else:
         L.append("- **Rating coverage:** no NRSRO ratings reported in this filing. Absence in the data does not "
                  "mean the holdings are unrated.")

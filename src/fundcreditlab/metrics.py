@@ -107,6 +107,12 @@ _AGENCIES = (("fitch", "Fitch"), ("moody", "Moody's"), ("standard", "S&P"), ("s&
              ("dbrs", "DBRS Morningstar"), ("morningstar", "DBRS Morningstar"), ("kroll", "KBRA"),
              ("kbra", "KBRA"))
 UNNAMED_AGENCY = "agency not named"
+# Values filers use to mean "no rating". Seen live: NAMEOFNRSRO = "N/A" on every security of a fund.
+PLACEHOLDERS = {"N/A", "NA", "NONE", "NR", "N.R.", "NOT RATED", "UNRATED", "-", "--"}
+
+
+def _is_placeholder(value) -> bool:
+    return isinstance(value, str) and value.strip().upper() in PLACEHOLDERS
 
 
 def agency(name) -> str:
@@ -124,20 +130,29 @@ def agency(name) -> str:
 def rating_coverage(sec: pd.DataFrame, nrsro: pd.DataFrame) -> dict:
     """Security-level NRSRO ratings as filed: share of securities with at least one rating,
     the same share weighted by % of net assets, and the share rated by each agency.
-    Ratings are NOT mapped across agencies: scales differ. reported=False means the filing
-    carries no rating rows at all."""
+    Ratings are NOT mapped across agencies: scales differ. Placeholder rows ('N/A' as agency
+    or rating) are not ratings.
+
+    status: 'reported' (real ratings present), 'placeholder_only' (rows exist, all placeholders)
+    or 'none' (no rating rows in the filing).
+    """
     n = len(sec)
-    out = {"securities": n, "reported": False, "rated_share": None, "rated_pct_of_assets": None,
-           "by_agency": {}}
+    out = {"securities": n, "status": "none", "reported": False, "rated_share": None,
+           "rated_pct_of_assets": None, "by_agency": {}}
     if n == 0 or nrsro.empty:
         return out
     r = nrsro[nrsro["TYPE"].astype(str).str.upper() == "SECURITY"]
-    r = r[r["RATING"].notna()] if "RATING" in r.columns else r
-    r = r.assign(AGENCY=r["NAMEOFNRSRO"].map(agency))
     r = r.merge(sec[["ACCESSION_NUMBER", "SECURITY_ID"]], on=["ACCESSION_NUMBER", "SECURITY_ID"])
-    rated_ids = set(r["SECURITY_ID"])
-    by_agency = r.drop_duplicates(["SECURITY_ID", "AGENCY"]).groupby("AGENCY").size() / n
-    out.update(reported=True, rated_share=len(rated_ids) / n,
+    if r.empty:
+        return out
+    real = r[r["RATING"].notna() & ~r["RATING"].map(_is_placeholder) & ~r["NAMEOFNRSRO"].map(_is_placeholder)]
+    if real.empty:
+        out["status"] = "placeholder_only"
+        return out
+    real = real.assign(AGENCY=real["NAMEOFNRSRO"].map(agency))
+    rated_ids = set(real["SECURITY_ID"])
+    by_agency = real.drop_duplicates(["SECURITY_ID", "AGENCY"]).groupby("AGENCY").size() / n
+    out.update(status="reported", reported=True, rated_share=len(rated_ids) / n,
                rated_pct_of_assets=float(sec.loc[sec["SECURITY_ID"].isin(rated_ids), PCT].sum()),
                by_agency={k: float(v) for k, v in by_agency.items()})
     return out

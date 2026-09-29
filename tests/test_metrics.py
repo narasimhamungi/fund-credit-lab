@@ -117,7 +117,14 @@ def test_agency_names_are_normalised(by_id):
 
 def test_filing_without_rating_rows_is_marked_not_reported(by_id):
     rc = by_id["S000000002"]["rating_coverage"]
-    assert rc["reported"] is False and rc["rated_share"] is None
+    assert rc["status"] == "none" and rc["rated_share"] is None
+
+
+def test_placeholder_na_entries_are_not_ratings(by_id):
+    # Regression: a live filer lists NAMEOFNRSRO 'N/A' on every security; it showed as '100% rated by N/A'.
+    assert "N/A" not in by_id["S000000001"]["rating_coverage"]["by_agency"]      # DEALER C stays unrated
+    rc = by_id["S000000006"]["rating_coverage"]
+    assert rc["status"] == "placeholder_only" and rc["reported"] is False and rc["rated_share"] is None
 
 
 def test_explicit_report_date_filter(nmfp_zip):

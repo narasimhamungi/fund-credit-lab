@@ -105,6 +105,10 @@ def build_tables():
         dict(ACCESSION_NUMBER=a, SECURITY_ID=4, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO=None, RATING="A-1"),
         dict(ACCESSION_NUMBER=a, SECURITY_ID=3, IDENTITY="GUARANTOR CO", TYPE="GUARANTOR",
              NAMEOFNRSRO="Fitch", RATING="AAA"),
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=5, IDENTITY=None, TYPE="SECURITY", NAMEOFNRSRO="N/A", RATING="N/A"),
+        # ETA files placeholder entries only, as one large live filer does
+        dict(ACCESSION_NUMBER="0007-26-000001", SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY",
+             NAMEOFNRSRO="N/A", RATING="N/A"),
     ]
 
     def liq(acc, date, dv, wv, dp, wp):
