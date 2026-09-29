@@ -6,7 +6,7 @@ A worked example of taking the tool's output to a committee-style recommendation
 |---|---|
 | [rationale.md](rationale.md) | Two-page credit-profile illustration: key drivers, sensitivities and data limits, with each figure tagged to its source file |
 | [committee-memo.md](committee-memo.md) | One-page practice committee memo: recommendation, reasons, watch items and open questions |
-| Deck (5 slides) | Pending |
+| [deck.pdf](deck.pdf) | Five-slide practice committee deck built from the rationale |
 
 Data: SEC Form N-MFP, report date 31 Aug 2026. Extract: `fund-credit-lab case --series S000002969 --peer S000004283`,
 output in [`outputs/2026-08/case_S000002969/`](../../../outputs/2026-08/case_S000002969/).

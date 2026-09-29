@@ -27,7 +27,7 @@ credit-profile memo.
       counterparties and collateral, ratings by agency and scale, peer percentiles), unit-tested
 - [x] Case study on JPMorgan Prime Money Market Fund: rationale and committee memo in
       [`docs/case-studies/jpmorgan-prime-2026-08/`](docs/case-studies/jpmorgan-prime-2026-08/)
-- [ ] Case-study deck (pending)
+- [x] Case-study deck: [`deck.pdf`](docs/case-studies/jpmorgan-prime-2026-08/deck.pdf)
 
 ## Run
 
