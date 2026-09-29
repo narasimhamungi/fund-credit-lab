@@ -25,7 +25,9 @@ credit-profile memo.
 - [ ] Concentration, repo and ratings reconciled to a published holdings file
 - [x] `case` command: one fund's traceable extract (daily liquidity with peers, flows, top entities, repo
       counterparties and collateral, ratings by agency and scale, peer percentiles), unit-tested
-- [ ] Case study on JPMorgan Prime Money Market Fund in `docs/case-studies/` (pending)
+- [x] Case study on JPMorgan Prime Money Market Fund: rationale and committee memo in
+      [`docs/case-studies/jpmorgan-prime-2026-08/`](docs/case-studies/jpmorgan-prime-2026-08/)
+- [ ] Case-study deck (pending)
 
 ## Run
 
