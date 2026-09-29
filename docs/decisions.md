@@ -29,3 +29,7 @@
 12. **Stress is deliberately simple.** Two views: worst cumulative net outflow over a rolling window (default five
     reported days) against weekly liquid assets, and instantaneous redemption shocks (10-40% of net assets) against
     daily and weekly liquid assets. No price impact, no liquidity fees.
+13. **Case studies cite files, not memory.** The `case` command writes every figure a written case study uses to
+    CSVs under `outputs/<month>/case_<SERIESID>/`. Rating codes are labelled short-term or long-term by symbol
+    pattern only; they are never mapped between agencies or summed across scales. Peer percentiles compare the fund
+    with non-feeder funds of its own category at the same report date.

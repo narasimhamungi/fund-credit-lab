@@ -83,3 +83,14 @@ Results are rounded to 6 decimals to remove float noise (source precision is 0.0
 | `CLASSESID` | Share class id |
 | `DAILYGROSSSUBSCRIPTIONS`, `DAILYGROSSREDEMPTIONS` | Gross subscriptions and redemptions (USD) |
 | `DAILYSHAREHOLDERFLOWDATE` | Date |
+
+## COLLATERALISSUERS (read only by the `case` command, filtered to one filing)
+| Field | Meaning |
+|---|---|
+| `SECURITY_ID` | Links to the repo position in SCHPORTFOLIOSECURITIES |
+| `NAMEOFCOLLATERALISSUER` | Issuer of the collateral |
+| `VALUEOFCOLLATERALTOTHENEARESTC` | Value of the collateral (USD) |
+| `CTGRYINVESTMENTSRPRSNTSCOLLATE` | Category that most closely represents the collateral |
+
+`INCLUDINGVALUEOFANYSPONSORSUPP` (SCHPORTFOLIOSECURITIES) gives the repo position value in USD; collateral value
+divided by it is the collateral cover shown per counterparty.

@@ -1,0 +1,12 @@
+repo_type,collateral_category,collateral_usd,share_of_repo_type_pct
+government_repo,U.S. Treasuries (including strips),7.65e+08,100
+other_repo,Corporate Debt Securities,1.26761e+10,51.1613
+other_repo,Asset-Backed Securities,3.45439e+09,13.942
+other_repo,Equities,2.65197e+09,10.7034
+other_repo,Private Label Collateralized Mortgage Obligations,2.47564e+09,9.99179
+other_repo,Other Instrument,1.57762e+09,6.36735
+other_repo,U.S. Treasuries (including strips),9.78527e+08,3.94937
+other_repo,Money Market,6.2497e+08,2.5224
+other_repo,Agency Collateralized Mortgage Obligation,2.07623e+08,0.837974
+other_repo,Agency Debentures and Agency Strips,8.69135e+07,0.350786
+other_repo,Agency Mortgage-Backed Securities,4.30079e+07,0.173581

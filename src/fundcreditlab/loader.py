@@ -57,6 +57,22 @@ def load_nmfp_zip(path: str | Path) -> dict[str, pd.DataFrame]:
     return tables
 
 
+def read_table(path: str | Path, table: str, accessions: set[str] | None = None,
+               chunksize: int = 200_000) -> pd.DataFrame:
+    """Read one extra table (e.g. COLLATERALISSUERS, about 55MB raw) in chunks, keeping only
+    rows for the given accessions. Values stay as text. Returns an empty frame if absent."""
+    with zipfile.ZipFile(path) as zf:
+        members = {_table_name(n): n for n in zf.namelist() if not n.endswith("/")}
+        if table not in members:
+            return pd.DataFrame()
+        parts = []
+        with zf.open(members[table]) as fh:
+            for chunk in pd.read_csv(fh, sep="\t", dtype=str, keep_default_na=False, na_values=[""],
+                                     encoding="utf-8", chunksize=chunksize):
+                parts.append(chunk if accessions is None else chunk[chunk["ACCESSION_NUMBER"].isin(accessions)])
+    return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
+
+
 _NUMERIC = {
     "SERIESLEVELINFO": ["AVERAGEPORTFOLIOMATURITY", "AVERAGELIFEMATURITY", "NETASSETOFSERIES"],
     "SCHPORTFOLIOSECURITIES": ["PERCENTAGEOFMONEYMARKETFUNDNET",

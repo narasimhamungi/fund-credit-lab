@@ -30,9 +30,17 @@ def main(argv: list[str] | None = None) -> int:
     a.add_argument("--include-feeders", action="store_true",
                    help="also write memos for feeder funds (their portfolio is the master fund)")
     a.add_argument("--out", default="outputs", help="output directory")
+    c = sub.add_parser("case", help="write the traceable extract for one fund's case study")
+    c.add_argument("--zip", required=True, help="path to the SEC N-MFP data set ZIP")
+    c.add_argument("--series", required=True, help="SERIESID of the fund")
+    c.add_argument("--peer", action="append", help="SERIESID to include in the daily liquidity file (repeatable)")
+    c.add_argument("--report-date", help="YYYY-MM-DD (default: latest in the data set)")
+    c.add_argument("--out", default="outputs", help="output directory; files go to <out>/case_<SERIESID>/")
     args = p.parse_args(argv)
 
     tables = load_nmfp_zip(args.zip)
+    if args.cmd == "case":
+        return _case(args, tables)
     results = series_metrics(tables, args.report_date, DEFAULT_LIMITS)
     feeders = [m for m in results if m["feeder"]]
     if not args.include_feeders:
@@ -70,6 +78,19 @@ def main(argv: list[str] | None = None) -> int:
     skipped = "" if args.include_feeders else f"; {len(feeders)} feeder funds left out (--include-feeders to add)"
     print(f"{len(results)} series analysed{skipped}; {len(findings)} data-quality findings; "
           f"percentages filed as {scale} -> {out}/")
+    return 0
+
+
+def _case(args, tables) -> int:
+    from .case import build_case, write_case
+    try:
+        c = build_case(args.zip, tables, args.series, args.peer, args.report_date, DEFAULT_LIMITS)
+    except ValueError as e:
+        print(f"error: {e}")
+        return 2
+    d = write_case(c, Path(args.out), Path(args.zip).name)
+    note = f"; peers not found: {', '.join(c['missing_peers'])}" if c["missing_peers"] else ""
+    print(f"case extract for {args.series} -> {d}/ ({c['collateral_rows']} collateral rows{note})")
     return 0
 
 

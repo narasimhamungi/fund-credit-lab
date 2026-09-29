@@ -95,6 +95,19 @@ def build_tables():
         sec("0006-26-000001", 2, "STATE A GO", "Other Municipal Security", 45),
         sec("0007-26-000001", 1, "MASTER PRIME PORTFOLIO", "Investment Company", 100),
     ]
+    na_m = {r["ACCESSION_NUMBER"]: r["NETASSETOFSERIES"] for r in sls}
+    for r in secs:   # position value in USD, consistent with the % of net assets
+        r["INCLUDINGVALUEOFANYSPONSORSUPP"] = r["PERCENTAGEOFMONEYMARKETFUNDNET"] / 100.0 * na_m[r["ACCESSION_NUMBER"]]
+    coll = [   # collateral behind repo positions (COLLATERALISSUERS)
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=5, NAMEOFCOLLATERALISSUER="VARIOUS EQUITY", VALUEOFCOLLATERALTOTHENEARESTC=30 * M,
+             CTGRYINVESTMENTSRPRSNTSCOLLATE="Equity"),
+        dict(ACCESSION_NUMBER=a, SECURITY_ID=5, NAMEOFCOLLATERALISSUER="VARIOUS CORP", VALUEOFCOLLATERALTOTHENEARESTC=25 * M,
+             CTGRYINVESTMENTSRPRSNTSCOLLATE="Corporate Debt Securities"),
+        dict(ACCESSION_NUMBER="0002-26-000001", SECURITY_ID=3, NAMEOFCOLLATERALISSUER="US TREASURY",
+             VALUEOFCOLLATERALTOTHENEARESTC=153 * M, CTGRYINVESTMENTSRPRSNTSCOLLATE="U.S. Treasuries (including strips)"),
+        dict(ACCESSION_NUMBER="0002-26-000001", SECURITY_ID=4, NAMEOFCOLLATERALISSUER="FNMA",
+             VALUEOFCOLLATERALTOTHENEARESTC=51 * M, CTGRYINVESTMENTSRPRSNTSCOLLATE="U.S. Government Agency Obligations"),
+    ]
     nr = [   # agency names as they appear in live filings; one agency can be named several ways
         dict(ACCESSION_NUMBER=a, SECURITY_ID=1, IDENTITY=None, TYPE="SECURITY",
              NAMEOFNRSRO="Standard and Poor's Ratings Services", RATING="A-1+"),
@@ -127,7 +140,7 @@ def build_tables():
     ]
     fl = _flows(a, [10, -20, -30, -10, 5, -15])
     return {"SUBMISSION": sub, "SERIESLEVELINFO": sls, "SCHPORTFOLIOSECURITIES": secs,
-            "NRSRO": nr, "LIQUIDASSETSDETAILS": la, "DLYSHAREHOLDERFLOWREPORT": fl}
+            "NRSRO": nr, "LIQUIDASSETSDETAILS": la, "DLYSHAREHOLDERFLOWREPORT": fl, "COLLATERALISSUERS": coll}
 
 
 def _live_value(column, value):

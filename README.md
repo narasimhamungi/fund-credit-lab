@@ -23,6 +23,9 @@ credit-profile memo.
 - [x] Run on the live SEC data set for 31 Aug 2026: 295 funds, outputs in `outputs/2026-08/`
 - [x] Net assets, WAM, WAL and liquidity checked against sponsor disclosures for two funds (`docs/validation.md`)
 - [ ] Concentration, repo and ratings reconciled to a published holdings file
+- [x] `case` command: one fund's traceable extract (daily liquidity with peers, flows, top entities, repo
+      counterparties and collateral, ratings by agency and scale, peer percentiles), unit-tested
+- [ ] Case study on JPMorgan Prime Money Market Fund in `docs/case-studies/` (pending)
 
 ## Run
 
@@ -33,6 +36,15 @@ pytest -q
 fund-credit-lab analyze --zip path/to/nmfp_data_set.zip --out outputs/2026-08
 fund-credit-lab analyze --zip path/to/nmfp_data_set.zip --series S000000000 --report-date 2026-08-31
 ```
+
+Case extract for one fund, with peers for the daily liquidity comparison:
+
+```bash
+fund-credit-lab case --zip path/to/nmfp_data_set.zip --series S000002969 --peer S000004283 --out outputs/2026-08
+```
+
+It writes `case_<SERIESID>/` with seven CSVs and `case_summary.md`; any figure a case-study document cites
+comes from one of those files.
 
 The latest report date in the ZIP is used unless `--report-date` is given. Feeder funds are left out unless
 `--include-feeders` is passed.
@@ -49,6 +61,7 @@ Output: `summary.csv` (one row per series), `findings.csv` (data-quality finding
 | `src/fundcreditlab/metrics.py` | Per-series profile metrics |
 | `src/fundcreditlab/stress.py` | Liquidity stress |
 | `src/fundcreditlab/report.py` | Memo rendering |
+| `src/fundcreditlab/case.py` | One-fund case extract (reads `COLLATERALISSUERS` in chunks, filtered to the fund) |
 | `docs/` | Data dictionary, engineering decisions, limitations, regulatory sources and live-data validation |
 
 Read `docs/limitations.md` before using any output.
