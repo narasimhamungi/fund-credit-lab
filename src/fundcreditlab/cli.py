@@ -11,6 +11,14 @@ from .metrics import series_metrics
 from .report import render_memo
 from .validate import validate
 
+SUMMARY_COLUMNS = ["series_id", "name", "category", "report_date", "net_assets", "wam", "wal",
+                   "dla_min_pct", "wla_min_pct", "dla_tested", "top1_issuer", "top1_pct", "top5_pct",
+                   "repo_pct", "top_repo_counterparty", "top_repo_counterparty_pct", "flags"]
+
+
+def _r(v, digits=2):
+    return None if v is None else round(v, digits)
+
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(prog="fund-credit-lab")
@@ -19,29 +27,48 @@ def main(argv: list[str] | None = None) -> int:
     a.add_argument("--zip", required=True, help="path to the SEC N-MFP data set ZIP")
     a.add_argument("--report-date", help="YYYY-MM-DD (default: latest in the data set)")
     a.add_argument("--series", action="append", help="SERIESID to include (repeatable)")
+    a.add_argument("--include-feeders", action="store_true",
+                   help="also write memos for feeder funds (their portfolio is the master fund)")
     a.add_argument("--out", default="outputs", help="output directory")
     args = p.parse_args(argv)
 
     tables = load_nmfp_zip(args.zip)
-    findings = validate(tables, latest_submissions(tables["SUBMISSION"]))
     results = series_metrics(tables, args.report_date, DEFAULT_LIMITS)
+    feeders = [m for m in results if m["feeder"]]
+    if not args.include_feeders:
+        results = [m for m in results if not m["feeder"]]
     if args.series:
         results = [m for m in results if m["series_id"] in set(args.series)]
+    latest = latest_submissions(tables["SUBMISSION"])
+    findings = validate(tables, latest[latest["ACCESSION_NUMBER"].isin({m["accession"] for m in results})])
+
     out = Path(args.out)
     (out / "memos").mkdir(parents=True, exist_ok=True)
     for m in results:
         (out / "memos" / f"{m['series_id']}_{m['report_date']:%Y-%m}.md").write_text(
-            render_memo(m, findings), encoding="utf-8")
+            render_memo(m, findings, DEFAULT_LIMITS), encoding="utf-8")
     with open(out / "summary.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
-        w.writerow(["series_id", "name", "category", "report_date", "net_assets", "wam", "wal",
-                    "dla_min_pct", "wla_min_pct", "top1_pct", "top5_pct", "flags"])
+        w.writerow(SUMMARY_COLUMNS)
         for m in results:
+            c, r = m["concentration"], m["repo"]
             w.writerow([m["series_id"], m["name"], m["category"], f"{m['report_date']:%Y-%m-%d}",
-                        m["net_assets"], m["wam"], m["wal"], m["dla_min_pct"], m["wla_min_pct"],
-                        m["concentration"]["top1_pct"], m["concentration"]["top5_pct"],
+                        m["net_assets"], m["wam"], m["wal"], _r(m["dla_min_pct"]), _r(m["wla_min_pct"]),
+                        m["dla_tested"], c["top1_issuer"], _r(c["top1_pct"]), _r(c["top5_pct"]),
+                        _r(r["repo_pct"]), r["top_counterparty"], _r(r["top_counterparty_pct"]),
                         "; ".join(m["flags"])])
-    print(f"{len(results)} series analysed, {len(findings)} data-quality findings -> {out}/")
+    series_of = {m["accession"]: m["series_id"] for m in results}
+    with open(out / "findings.csv", "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["series_id", "accession", "check", "detail"])
+        for f in findings:
+            w.writerow([series_of.get(f.accession), f.accession, f.check, f.detail])
+
+    multiplier = float(tables["_META"]["pct_multiplier"].iloc[0])
+    scale = "fractions, converted to %" if multiplier != 1.0 else "already in %"
+    skipped = "" if args.include_feeders else f"; {len(feeders)} feeder funds left out (--include-feeders to add)"
+    print(f"{len(results)} series analysed{skipped}; {len(findings)} data-quality findings; "
+          f"percentages filed as {scale} -> {out}/")
     return 0
 
 

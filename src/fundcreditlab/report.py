@@ -5,39 +5,52 @@ a credit rating, not a Fitch product, and does not apply any agency's methodolog
 """
 from __future__ import annotations
 
+from .config import DEFAULT_LIMITS, Limits
 from .validate import Finding
 
 DISCLAIMER = ("*Independent illustration from public SEC Form N-MFP data. Not a credit rating, "
               "and not the methodology of any rating agency.*")
+FEEDER_NOTE = ("*Feeder fund: its portfolio is shares of a master fund, so concentration and rating "
+               "coverage describe that holding, not the underlying issuers.*")
 
 
 def _f(v, fmt="{:.1f}", na="n/a"):
     return na if v is None else fmt.format(v)
 
 
-def render_memo(m: dict, findings: list[Finding] | None = None) -> str:
-    h, c, s = m["headroom"], m["concentration"], m["stress"]
+def render_memo(m: dict, findings: list[Finding] | None = None, limits: Limits = DEFAULT_LIMITS) -> str:
+    lim = limits
+    h, c, s, rp = m["headroom"], m["concentration"], m["stress"], m["repo"]
     L: list[str] = []
     L.append(f"# {m['name'] or m['series_id']} ({m['series_id']})")
     L.append(f"Report date: {m['report_date']:%Y-%m-%d}  |  Category: {m['category']}  |  "
              f"Net assets: ${_f(m['net_assets'], '{:,.0f}')}")
     L.append("")
     L.append(DISCLAIMER)
+    if m.get("feeder"):
+        L.append("")
+        L.append(FEEDER_NOTE)
     L.append("")
     L.append("## Key profile drivers")
-    L.append(f"- **Maturity:** WAM {_f(m['wam'])} days, WAL {_f(m['wal'])} days.")
-    if m["liquidity_tested"]:
-        L.append(f"- **Liquidity:** lowest daily liquid assets {_f(m['dla_min_pct'])}% and lowest weekly "
-                 f"liquid assets {_f(m['wla_min_pct'])}% of total assets in the reporting month.")
+    L.append(f"- **Maturity:** WAM {_f(m['wam'])} days (limit {lim.wam_max_days:g}), WAL {_f(m['wal'])} days (limit {lim.wal_max_days:g}).")
+    if m["dla_tested"]:
+        L.append(f"- **Liquidity:** lowest daily liquid assets {_f(m['dla_min_pct'])}% (minimum {lim.dla_min_pct:g}%) and lowest "
+                 f"weekly liquid assets {_f(m['wla_min_pct'])}% (minimum {lim.wla_min_pct:g}%) of total assets in the month.")
     else:
-        L.append("- **Liquidity:** category is not tested against the daily/weekly minimums here "
-                 f"(observed lowest DLA {_f(m['dla_min_pct'])}%, WLA {_f(m['wla_min_pct'])}%).")
+        L.append(f"- **Liquidity:** lowest weekly liquid assets {_f(m['wla_min_pct'])}% (minimum {lim.wla_min_pct:g}%). The daily "
+                 f"minimum does not apply to tax-exempt funds; lowest daily liquid assets {_f(m['dla_min_pct'])}% "
+                 "shown for information.")
     if c["top1_issuer"] is None:
-        L.append("- **Concentration (non-government issuers):** none; the portfolio holds only US government securities.")
+        L.append("- **Credit concentration:** none; holdings are US government securities and "
+                 "government-collateralised repo only.")
     else:
-        L.append(f"- **Concentration (non-government issuers):** largest issuer {c['top1_issuer']} at "
-                 f"{_f(c['top1_pct'])}% of net assets; top five {_f(c['top5_pct'])}%; "
-                 f"Herfindahl {_f(c['hhi'], '{:.3f}')}.")
+        L.append(f"- **Credit concentration (legal entity):** largest {c['top1_issuer']} at {_f(c['top1_pct'])}% of "
+                 f"net assets; top five {_f(c['top5_pct'])}%; Herfindahl {_f(c['hhi'], '{:.3f}')}.")
+    if rp["repo_pct"]:
+        L.append(f"- **Repo:** {rp['repo_pct']:.1f}% of net assets across {rp['counterparties']} counterparties "
+                 f"(government collateral {rp['gov_collateral_pct']:.1f}%, other collateral "
+                 f"{rp['other_collateral_pct']:.1f}%); largest counterparty {rp['top_counterparty']} at "
+                 f"{rp['top_counterparty_pct']:.1f}%, gross of collateral.")
     rc = m["rating_coverage"]
     if rc["rated_share"] is not None:
         agencies = ", ".join(f"{k} {v:.0%}" for k, v in sorted(rc["by_agency"].items())) or "none"
@@ -51,10 +64,11 @@ def render_memo(m: dict, findings: list[Finding] | None = None) -> str:
     L.append("## Headroom to limits")
     L.append("| Measure | Headroom |")
     L.append("|---|---|")
-    L.append(f"| WAM vs limit | {_f(h['wam_days'])} days |")
-    L.append(f"| WAL vs limit | {_f(h['wal_days'])} days |")
-    L.append(f"| Daily liquid assets vs minimum | {_f(h['dla_pp'])} pp |")
-    L.append(f"| Weekly liquid assets vs minimum | {_f(h['wla_pp'])} pp |")
+    L.append(f"| WAM vs {lim.wam_max_days:g}-day limit | {_f(h['wam_days'])} days |")
+    L.append(f"| WAL vs {lim.wal_max_days:g}-day limit | {_f(h['wal_days'])} days |")
+    dla = _f(h["dla_pp"]) + " pp" if m["dla_tested"] else "not applicable (tax-exempt)"
+    L.append(f"| Daily liquid assets vs {lim.dla_min_pct:g}% minimum | {dla} |")
+    L.append(f"| Weekly liquid assets vs {lim.wla_min_pct:g}% minimum | {_f(h['wla_pp'])} pp |")
     L.append("")
     L.append("## Liquidity stress")
     if s["worst_outflow"] is not None:
@@ -62,7 +76,7 @@ def render_memo(m: dict, findings: list[Finding] | None = None) -> str:
                  f"({_f(s['worst_outflow_pct_of_assets'], '{:.2f}')}% of net assets); weekly liquid assets "
                  f"cover it {_f(s['weekly_coverage_of_worst_outflow'], '{:.1f}')}x.")
     else:
-        L.append("- No daily shareholder-flow data in this filing (legacy form), so historical-flow stress is not run.")
+        L.append("- No daily shareholder-flow data in this filing, so historical-flow stress is not run.")
     L.append("")
     L.append("| Instant redemption | Amount | Covered by daily liquid | Covered by weekly liquid |")
     L.append("|---|---|---|---|")
