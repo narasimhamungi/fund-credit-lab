@@ -1,0 +1,19 @@
+[project]
+name = "fund-credit-lab"
+version = "0.1.0"
+description = "Credit-profile analytics for US money market funds from public SEC Form N-MFP data"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+fund-credit-lab = "fundcreditlab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
